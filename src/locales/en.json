@@ -1,0 +1,106 @@
+{
+    "LandingTitle": "Aliquam erat volutpat. Aliquam  faucibus. ",
+    "welcometext": "Aliquam erat volutpat. Al faucibus. Aliquam erat volutpat. Al faucibus. Al faucibus. Aliquam erat volutpat. Al faucibus. ",
+    "Nav Services": "Usługi",
+    "Nav Technologies": "Technologie",
+    "Nav Case Study": "Portfolio",
+    "Nav Insights": "Blog",
+    "Nav About": "Poznaj nas",
+
+    "Services Title": "Mówimy w Twoim jezyku",
+    "Services Text": "Cras dictum blandit ante, sed consectetur ante laoreet id. Maecenas blandit ex ac lacus suscipit faucibus. Donec convallis fermentum augue. Praesent varius massa non massa porttitor pellentesque. Nunc mi nunc, ",
+
+    "Card Title 1": "PRODUCT",
+    "Card Description 1": "Cras dictum blandit ante, sed consectetur ante laoreet id. Maecenas blandit ex ac lacus suscipit faucibus. Donec convallis fermentum augue.  Nunc mi nunc",
+    "Card Title 2": "WEB DEVELOPMENT",
+    "Card Description 2": "Cras dictum blandit ante, sed consectetur ante laoreet id. Maecenas blandit ex ac lacus suscipit faucibus. Donec convallis fermentum augue.  Nunc mi nunc",
+    "Card Title 3": "WEB DESIGN",
+    "Card Description 3": "Cras dictum blandit ante, sed consectetur ante laoreet id. Maecenas blandit ex ac lacus suscipit faucibus. Donec convallis fermentum augue.  Nunc mi nunc",
+    "Card Title 4": "PRODUCT",
+    "Card Description 4": "Cras dictum blandit ante, sed consectetur ante laoreet id. Maecenas blandit ex ac lacus suscipit faucibus. Donec convallis fermentum augue.  Nunc mi nunc",
+
+    "Case Studies Title": "Case Studies",
+    "Case Studies Text": "Cras dictum blandit ante, sed consectetur ante laoreet id. Maecenas blandit ex ac lacus suscipit faucibus. Donec convallis fermentum augue. Praesent varius massa non massa porttitor pellentesque. Nunc mi nunc",
+
+    "Case Studies 1 Title": "LOREM IPSUM LOREM IPSUM ",
+    "Case Studies 1 Tag Text": "Technology",
+    "Case Studies 2 Title": "LOREM IPSUM LOREM IPSUM ",
+    "Case Studies 2 Tag Text": "Robotics",
+    "Case Studies 3 Title": "LOREM IPSUM LOREM IPSUM ",
+    "Case Studies 3 Tag Text": "Development",
+    "Case Studies 4 Title": "LOREM IPSUM LOREM IPSUM ",
+    "Case Studies 4 Tag Text": "Transport",
+    "Case Studies 5 Title": "LOREM IPSUM LOREM IPSUM ",
+    "Case Studies 5 Tag Text": "Gamification",
+    "Case Studies 6 Title": "LOREM IPSUM LOREM IPSUM ",
+    "Case Studies 6 Tag Text": "Architecture",
+    "Case Studies 7 Title": "LOREM IPSUM LOREM IPSUM ",
+    "Case Studies 7 Tag Text": "Gaming",
+    "Case Studies 8 Title": "LOREM IPSUM LOREM IPSUM ",
+    "Case Studies 8 Tag Text": "Social Network",
+
+    "Company Name": "CODEARTIST",
+    "Contact": "KONTAKT",
+    "Learn More": "DOWIEDZ SIĘ WIĘCEJ",
+    "Name": "Imię",
+    "Email": "Email",
+    "Phone Number": "Numer Telefonu",
+    "Optional": "opcjonalne",
+    "Message": "Wiadomość",
+    "Send": "Wyślij",
+    "Lets Talk": "Umówny się na spotkanie",
+
+    "Technologies Title": "Technologie których używamy",
+    "Technologies Text": "Cras dictum blandit ante, sed consectetur ante laoreet id. Maecenas blandit ex ac lacus suscipit faucibus. Donec convallis fermentum augue. Praesent varius massa non massa porttitor pellentesque. Nunc mi nunc, ",
+    "Technologies Subtitle": "Technologie których używamy",
+    "Technologies Subtext": "Cras dictum blandit ante, sed consectetur ante laoreet id. Maecenas blandit ex ac lacus suscipit faucibus. Donec convallis fermentum augue. Praesent varius massa non massa porttitor pellentesque. Nunc mi nunc, ",
+
+    "Products": {
+        "Products Title": "Nasze Produkty",
+        "Products Text": "Cras dictum blandit ante, sed consectetur ante laoreet id. Maecenas blandit ex ac lacus suscipit faucibus. Donec convallis fermentum augue. Praesent varius massa non massa porttitor pellentesque. Nunc mi nunc ",
+        "Products Cards": {
+            "Card_1": {
+                "Product Title": "LOREM IPSUM LOREM IPSUM ",
+                "Product Description": "Cras dictum blandit ante, sed consectetur ante laoreet id. Maecenas blandit ex ac lacus suscipit faucibus. Donec convallis fermentum augue. Praesent varius massa non massa porttitor pellentesque. Nunc mi nunc ",
+                "Product Tags": {
+                    "Tag Text 1": "Technology",
+                    "Tag Text 2": "Gaming"
+                }
+            },
+            "Card_2": {
+                "Product Title": "LOREM IPSUM LOREM IPSUM ",
+                "Product Description": "Cras dictum blandit ante, sed consectetur ante laoreet id. Maecenas blandit ex ac lacus suscipit faucibus. Donec convallis fermentum augue. Praesent varius massa non massa porttitor pellentesque. Nunc mi nunc ",
+                "Product Tags": {
+                    "Tag Text 1": "Technology",
+                    "Tag Text 2": "Gaming"
+                }
+            },
+            "Card_3": {
+                "Product Title": "LOREM IPSUM LOREM IPSUM ",
+                "Product Description": "Cras dictum blandit ante, sed consectetur ante laoreet id. Maecenas blandit ex ac lacus suscipit faucibus. Donec convallis fermentum augue. Praesent varius massa non massa porttitor pellentesque. Nunc mi nunc ",
+                "Product Tags": {
+                    "Tag Text 1": "Technology",
+                    "Tag Text 2": "Gaming"
+                }
+            }
+        }
+    },
+    "About Us": {
+        "About Us Title 1": "Poznaj nas",
+        "About Us Guide": "Lorem Ipsum bus las lobas",
+        "About Us Text": {
+            "Text_1": "Suscipit faucibus. Donec convallis fermentum augue. Praesent varius massa non massa porttitor pellentesque. Nunc mi nunc, Cras dictum blandit ante, sed consectetur ante laoreet id. Maecenas blandit ex ac lacus suscipit faucibus. Donec convallis fermentum augue. Praesent varius massa.",
+            "Text_2": "Suscipit faucibus. Donec convallis fermentum augue. Praesent varius massa non massa porttitor pellentesque. Nunc mi nunc, Cras dictum blandit ante, sed consectetur ante laoreet id. Maecenas blandit ex ac lacus suscipit faucibus. Donec convallis fermentum augue. Praesent varius massa.",
+            "Text_3": "Cras dictum blandit ante, sed consectetur ante laoreet id. Maecenas blandit ex ac lacus suscipit faucibus. Donec convallis fermentum augue. Praesent varius massa non massa porttitor pellentesque. Nunc mi nunc,  Cras dictum blandit ante, sed consectetur ante laoreet id. Maecenas blandit ex ac lacus suscipit faucibus. Donec convallis fermentum augue. Praesent varius massa non massa porttitor pellentesque. Nunc mi nunc, Cras dictum blandit ante, sed consectetur ante laoreet id. Maecenas blandit ex ac lacus suscipit faucibus. Donec convallis fermentum augue. Praesent varius massa.",
+            "Text_4": "Suscipit faucibus. Donec convallis fermentum augue. Praesent varius massa non massa porttitor pellentesque. Nunc mi nunc, Cras dictum blandit ante, sed consectetur ante laoreet id. Maecenas blandit ex ac lacus suscipit faucibus. Donec convallis fermentum augue. Praesent varius massa.",
+            "Text_5": "Suscipit faucibus. Donec convallis fermentum augue. Praesent varius massa non massa porttitor pellentesque. Nunc mi nunc, Cras dictum blandit ante, sed consectetur ante laoreet id. Maecenas blandit ex ac lacus suscipit faucibus. Donec convallis fermentum augue. Praesent varius massa."
+        },
+        "About Us Title 2": "Suscipit faucibus. Donec convallis fermentum augue. Praesent varius massa non massa porttitor pellentesque. Nunc mi nunc. "
+    },
+    "Footer": {
+        "Follow Us Title": "Follow Us",
+        "Follow Us Text": "Cras dictum blandit ante, sed consectetur ante laoreet id. Maecenas blandit ex ac lacus suscipit faucibus. Donec convallis fermentum augue. Praesent varius massa non massa porttitor pellentesque. Nunc mi nunc ",
+        "Contact Us Title": "Contact Us",
+        "Contact Us Text": "Cras dictum blandit ante, sed consectetur ante laoreet id. Maecenas blandit ex ac lacus suscipit faucibus. Donec convallis fermentum augue. Praesent varius massa non massa porttitor pellentesque. Nunc mi nunc "
+    }
+}
