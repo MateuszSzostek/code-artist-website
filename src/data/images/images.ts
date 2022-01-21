@@ -2,6 +2,13 @@ import vector_Product from "../images/vector/product.svg";
 import vector_WebDevelopment from "../images/vector/web-development.svg";
 import vector_WebDesign from "../images/vector/web-design.svg";
 
+import vector_React from "../images/vector/react.svg";
+import vector_Unity from "../images/vector/unity.svg";
+import vector_Typescript from "../images/vector/typescript.svg";
+import vector_Gatsby from "../images/vector/gatsby.svg";
+import vector_Docker from "../images/vector/docker.svg";
+import vector_ExpressJs from "../images/vector/express-js.svg";
+
 import raster_CaseStudy1 from "./raster/case-study-1.jpg";
 import raster_CaseStudy2 from "./raster/case-study-2.jpg";
 import raster_CaseStudy3 from "./raster/case-study-3.jpg";
@@ -15,6 +22,12 @@ const VectorImages = {
     vector_Product,
     vector_WebDevelopment,
     vector_WebDesign,
+    vector_React,
+    vector_Unity,
+    vector_Typescript,
+    vector_Gatsby,
+    vector_Docker,
+    vector_ExpressJs,
 };
 
 const RasterImages = {

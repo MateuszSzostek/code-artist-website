@@ -1,35 +1,47 @@
 import { v4 as uuidv4 } from "uuid";
 import { VectorImages } from "../images/images";
-import { IServiceCard } from "../../components/ServiceCard/types";
+import { ITechnologyCard } from "../../components/TechnologyCard/types";
 
-const { vector_Product, vector_WebDesign, vector_WebDevelopment } =
-    VectorImages;
+const {
+    vector_Docker,
+    vector_ExpressJs,
+    vector_Gatsby,
+    vector_React,
+    vector_Typescript,
+    vector_Unity,
+} = VectorImages;
 
-const servicesCardsData: IServiceCard[] = [
+const technologyCardsData: ITechnologyCard[] = [
     {
         id: uuidv4(),
-        image: vector_Product,
-        title: "Card Title 1",
-        description: "Card Description 1",
+        image: vector_Gatsby,
+        altAtribute: "Card Title 1",
     },
     {
         id: uuidv4(),
-        image: vector_WebDesign,
-        title: "Card Title 2",
-        description: "Card Description 2",
+        image: vector_Unity,
+        altAtribute: "Card Title 1",
     },
     {
         id: uuidv4(),
-        image: vector_WebDevelopment,
-        title: "Card Title 3",
-        description: "Card Description 3",
+        image: vector_React,
+        altAtribute: "Card Title 1",
     },
     {
         id: uuidv4(),
-        image: vector_Product,
-        title: "Card Title 4",
-        description: "Card Description 4",
+        image: vector_ExpressJs,
+        altAtribute: "Card Title 1",
+    },
+    {
+        id: uuidv4(),
+        image: vector_Docker,
+        altAtribute: "Card Title 1",
+    },
+    {
+        id: uuidv4(),
+        image: vector_Typescript,
+        altAtribute: "Card Title 1",
     },
 ];
 
-export default servicesCardsData;
+export default technologyCardsData;

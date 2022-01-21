@@ -1,4 +1,5 @@
 interface ITechnologyCard {
+    id: string;
     altAtribute: string;
     image: any;
 }
