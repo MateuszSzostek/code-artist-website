@@ -8,6 +8,7 @@ import vector_Typescript from "../images/vector/typescript.svg";
 import vector_Gatsby from "../images/vector/gatsby.svg";
 import vector_Docker from "../images/vector/docker.svg";
 import vector_ExpressJs from "../images/vector/express-js.svg";
+import vector_ElectronJs from "../images/vector/electron-js.svg";
 
 import raster_CaseStudy1 from "./raster/case-study-1.jpg";
 import raster_CaseStudy2 from "./raster/case-study-2.jpg";
@@ -28,6 +29,7 @@ const VectorImages = {
     vector_Gatsby,
     vector_Docker,
     vector_ExpressJs,
+    vector_ElectronJs,
 };
 
 const RasterImages = {

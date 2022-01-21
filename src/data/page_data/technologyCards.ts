@@ -9,6 +9,7 @@ const {
     vector_React,
     vector_Typescript,
     vector_Unity,
+    vector_ElectronJs,
 } = VectorImages;
 
 const technologyCardsData: ITechnologyCard[] = [
@@ -40,6 +41,11 @@ const technologyCardsData: ITechnologyCard[] = [
     {
         id: uuidv4(),
         image: vector_Typescript,
+        altAtribute: "Card Title 1",
+    },
+    {
+        id: uuidv4(),
+        image: vector_ElectronJs,
         altAtribute: "Card Title 1",
     },
 ];
