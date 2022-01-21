@@ -1,7 +1,11 @@
 import styled from "styled-components";
 import { myTheme } from "../../MyTheme";
 
-const {} = myTheme;
+const borderWidth = "0.2rem";
+
+const {
+    color: { defaultBrand, black },
+} = myTheme;
 
 const Styles = {
     CardContainer: styled.div`
@@ -10,10 +14,23 @@ const Styles = {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        aspect-ratio: 1 / 1;
-        width: 100%;
-        min-width: 100%;
-        overflow: hidden;
+        width: 210px;
+        height: 210px;
+    `,
+    CardBackground: styled.div`
+        position: absolute;
+        width: 60%;
+        height: 60%;
+        transform: rotateZ(45deg);
+        border-right: ${borderWidth} solid ${defaultBrand};
+        border-bottom: ${borderWidth} solid ${defaultBrand};
+        border-top: ${borderWidth} solid ${black};
+        border-left: ${borderWidth} solid ${black};
+    `,
+    TechnologyImage: styled.img`
+        position: absolute;
+        width: 30%;
+        height: 30%;
     `,
 };
 

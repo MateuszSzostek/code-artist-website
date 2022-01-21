@@ -2,16 +2,13 @@ import React, { PropsWithChildren } from "react";
 import Styles from "./styles";
 import { IStudyCaseCard } from "./types";
 import H3 from "../H3";
-import {
-    styles_serviceCardTitleText,
-    styles_tagStyles,
-} from "./styles";
+import { styles_serviceCardTitleText, styles_tagStyles } from "./styles";
 import { useIntl } from "gatsby-plugin-react-intl";
 import Tag from "../Tag";
 
 const { CardContainer, CaseStudyImage } = Styles;
 
-const TechnologyCard = ({
+const StudyCaseCard = ({
     image: {
         node: {
             childImageSharp: { gatsbyImageData },
@@ -33,4 +30,4 @@ const TechnologyCard = ({
     );
 };
 
-export default TechnologyCard;
+export default StudyCaseCard;

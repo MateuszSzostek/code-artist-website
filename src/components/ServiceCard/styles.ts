@@ -1,16 +1,13 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { myTheme } from "../../MyTheme";
 import { IP } from "../P/types";
 import { IH3 } from "../H3/types";
-
-import { btnColors } from "./helpers";
 
 const borderWidth = "0.2rem";
 
 const {
     color: { defaultBrand, black },
     fontSize: { medium_1, medium_3 },
-    fontWeight: { bold },
 } = myTheme;
 
 const Styles = {

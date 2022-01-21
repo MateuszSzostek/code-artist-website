@@ -15,6 +15,8 @@ import Container from "./../../components/Container";
 import Grid from "../../components/Grid";
 import FlexCol from "../../components/FlexCol";
 import Button from "../../components/Button";
+import TechnologyCard from "../../components/TechnologyCard";
+import technologyCardsData from "../../data/page_data/technologyCards";
 
 const Technologies = () => {
     const intl = useIntl();
@@ -37,7 +39,11 @@ const Technologies = () => {
                     </P>
                     <Button>{intl.formatMessage({ id: "Lets Talk" })}</Button>
                 </FlexCol>
-                <FlexCol></FlexCol>
+                <FlexCol>
+                    {technologyCardsData.map((card) => (
+                        <TechnologyCard key={card.id} {...card} />
+                    ))}
+                </FlexCol>
             </Grid>
         </Container>
     );

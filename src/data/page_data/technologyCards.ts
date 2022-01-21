@@ -16,37 +16,37 @@ const technologyCardsData: ITechnologyCard[] = [
     {
         id: uuidv4(),
         image: vector_Gatsby,
-        altAtribute: "Card Title 1",
+        altAtribute: "Technology Card Alt 1",
     },
     {
         id: uuidv4(),
         image: vector_Unity,
-        altAtribute: "Card Title 1",
+        altAtribute: "Technology Card Alt 2",
     },
     {
         id: uuidv4(),
         image: vector_React,
-        altAtribute: "Card Title 1",
+        altAtribute: "Technology Card Alt 3",
     },
     {
         id: uuidv4(),
         image: vector_ExpressJs,
-        altAtribute: "Card Title 1",
+        altAtribute: "Technology Card Alt 4",
     },
     {
         id: uuidv4(),
         image: vector_Docker,
-        altAtribute: "Card Title 1",
+        altAtribute: "Technology Card Alt 5",
     },
     {
         id: uuidv4(),
         image: vector_Typescript,
-        altAtribute: "Card Title 1",
+        altAtribute: "Technology Card Alt 6",
     },
     {
         id: uuidv4(),
         image: vector_ElectronJs,
-        altAtribute: "Card Title 1",
+        altAtribute: "Technology Card Alt 7",
     },
 ];
 
