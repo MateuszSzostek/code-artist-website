@@ -49,7 +49,6 @@ const Styles = {
     Content: styled.div`
         margin-left: 15px;
         margin-right: 15px;
-        width: 100%;
     `,
 };
 

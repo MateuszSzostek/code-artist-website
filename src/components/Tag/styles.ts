@@ -11,7 +11,7 @@ const Styles = {
     Background: styled.div<ITag>`
         position: absolute;
         padding: 0.6rem 1.4rem 0.6rem 1.4rem;
-        background-color: ${transparentLightGray};
+        background-color: ${({ color }) => color};
         display: flex;
         align-items: center;
         justify-content: center;

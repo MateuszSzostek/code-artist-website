@@ -14,8 +14,8 @@ const Styles = {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 210px;
-        height: 210px;
+        width: 120px;
+        height: 120px;
     `,
     CardBackground: styled.div`
         position: absolute;

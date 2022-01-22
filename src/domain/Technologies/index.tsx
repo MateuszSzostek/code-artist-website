@@ -14,6 +14,7 @@ import { useIntl } from "gatsby-plugin-react-intl";
 import Container from "./../../components/Container";
 import Grid from "../../components/Grid";
 import FlexCol from "../../components/FlexCol";
+import FlexRow from "../../components/FlexRow";
 import Button from "../../components/Button";
 import TechnologyCard from "../../components/TechnologyCard";
 import technologyCardsData from "../../data/page_data/technologyCards";
@@ -28,23 +29,11 @@ const Technologies = () => {
             <P {...styles_technologiesText}>
                 {intl.formatMessage({ id: "Technologies Text" })}
             </P>
-            <Grid {...styles_gridProperties}>
-                <FlexCol>
-                    <H3 {...styles_technologiesSubtitle}>
-                        {" "}
-                        {intl.formatMessage({ id: "Technologies Subtitle" })}
-                    </H3>
-                    <P {...styles_technologiesSubText}>
-                        {intl.formatMessage({ id: "Technologies Subtext" })}
-                    </P>
-                    <Button>{intl.formatMessage({ id: "Lets Talk" })}</Button>
-                </FlexCol>
-                <FlexCol>
-                    {technologyCardsData.map((card) => (
-                        <TechnologyCard key={card.id} {...card} />
-                    ))}
-                </FlexCol>
-            </Grid>
+            <FlexRow>
+                {technologyCardsData.map((card) => (
+                    <TechnologyCard key={card.id} {...card} />
+                ))}
+            </FlexRow>
         </Container>
     );
 };

@@ -4,6 +4,7 @@ import Landing from "../domain/Landing";
 import Services from "../domain/Services";
 import CaseStudies from "../domain/CaseStudies";
 import Technologies from "../domain/Technologies";
+import Products from "../domain/Products";
 import { graphql } from "gatsby";
 import { createContext } from "react";
 
@@ -41,6 +42,7 @@ const IndexPage = ({ data: { allFile } }) => {
                 <Services />
                 <CaseStudies />
                 <Technologies />
+                <Products />
             </Layout>
         </PageContext.Provider>
     );
