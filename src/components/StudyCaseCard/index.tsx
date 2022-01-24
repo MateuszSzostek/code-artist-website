@@ -17,7 +17,6 @@ const StudyCaseCard = ({
     title,
     tag,
 }: PropsWithChildren<IStudyCaseCard>) => {
-    console.log(gatsbyImageData);
     const Intl = useIntl();
     return (
         <CardContainer>

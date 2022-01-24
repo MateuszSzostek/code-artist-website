@@ -1,7 +1,7 @@
-import { GridType } from "../../GlobalTypes";
-
 interface IFlexCol {
-    flexColProperties?: {};
+    flexColProperties: {
+        margin?: string;
+    };
 }
 
 export type { IFlexCol };

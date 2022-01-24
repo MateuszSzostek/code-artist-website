@@ -3,7 +3,7 @@ import { ITag } from "./types";
 import { myTheme } from "../../MyTheme";
 
 const {
-    color: { white_1, transparentLightGray },
+    color: { white_1 },
     fontSize: { small_2 },
 } = myTheme;
 
@@ -11,7 +11,11 @@ const Styles = {
     Background: styled.div<ITag>`
         position: absolute;
         padding: 0.6rem 1.4rem 0.6rem 1.4rem;
-        background-color: ${({ color }) => color};
+        background-color: ${({ color }) =>
+            typeof color !== "undefined" &&
+            css`
+                color: ${color};
+            `};
         display: flex;
         align-items: center;
         justify-content: center;

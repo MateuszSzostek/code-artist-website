@@ -28,7 +28,9 @@ interface IColors {
     gray: ColorsEnum.gray;
     white_1: ColorsEnum.white_1;
     defaultBrand: ColorsEnum.defaultBrand;
+    transparentDefaultBrand: ColorsEnum.transparentDefaultBrand;
     facebookBlue: ColorsEnum.facebookBlue;
+    transparentDarkBlack: ColorsEnum.transparentDarkBlack;
     transparentDarkGray: ColorsEnum.transparentDarkGray;
     transparentLightGray: ColorsEnum.transparentLightGray;
 }

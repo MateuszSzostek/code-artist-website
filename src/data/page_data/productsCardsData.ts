@@ -1,8 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
-import { VectorImages } from "../images/images";
 import { IProductCard } from "../../components/ProductCard/types";
 
-const technologyCardsData: IProductCard[] = [
+const productCardsData: IProductCard[] = [
     {
         id: uuidv4(),
         image: {},
@@ -13,34 +12,20 @@ const technologyCardsData: IProductCard[] = [
     },
     {
         id: uuidv4(),
-        image: vector_Unity,
-        altAtribute: "Technology Card Alt 2",
+        image: {},
+        title: "Product Title 2",
+        description: "Product Description 2",
+        tags: ["Product 2 Tag 1", "Product 2 Tag 2"],
+        slug: "awesome-product-2-slug",
     },
     {
         id: uuidv4(),
-        image: vector_React,
-        altAtribute: "Technology Card Alt 3",
-    },
-    {
-        id: uuidv4(),
-        image: vector_ExpressJs,
-        altAtribute: "Technology Card Alt 4",
-    },
-    {
-        id: uuidv4(),
-        image: vector_Docker,
-        altAtribute: "Technology Card Alt 5",
-    },
-    {
-        id: uuidv4(),
-        image: vector_Typescript,
-        altAtribute: "Technology Card Alt 6",
-    },
-    {
-        id: uuidv4(),
-        image: vector_ElectronJs,
-        altAtribute: "Technology Card Alt 7",
+        image: {},
+        title: "Product Title 3",
+        description: "Product Description 3",
+        tags: ["Product 3 Tag 1", "Product 3 Tag 2"],
+        slug: "awesome-product-3-slug",
     },
 ];
 
-export default technologyCardsData;
+export default productCardsData;

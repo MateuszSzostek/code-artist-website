@@ -26,8 +26,6 @@ export const PageContext = createContext<IPageContext>(PageContextValue);
 export { PageContextValue };
 
 const IndexPage = ({ data: { allFile } }) => {
-    console.log(allFile);
-
     const [pageData, dispatchPageData] = useReducer(
         (state: object, payload: any) => ({ ...state, ...payload }),
         {

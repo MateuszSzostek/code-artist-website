@@ -12,7 +12,9 @@ const {
 
 const Styles = {};
 
-const styles_flexColProperties: IFlexCol = {};
+const styles_flexColProperties: IFlexCol = {
+    flexColProperties: {},
+};
 
 const styles_productsText: IP = {
     paragraphStyles: {

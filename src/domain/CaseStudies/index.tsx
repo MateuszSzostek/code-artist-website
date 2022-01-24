@@ -27,7 +27,6 @@ const CaseStudies = () => {
     caseStudiesCardsData.map((item, index) => {
         item.image = { ...edges[index] };
     });
-    console.log(caseStudiesCardsData);
 
     return (
         <Container {...styles_containerProperties}>

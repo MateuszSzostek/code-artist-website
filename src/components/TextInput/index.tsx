@@ -8,7 +8,6 @@ const TextInput = ({
     children,
     props: { width, placeholder, onChangeFunc },
 }: PropsWithChildren<ITextInput>) => {
-    console.log(width);
     return (
         <Wrapper>
             <Label>{children}</Label>

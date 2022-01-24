@@ -6,7 +6,7 @@ import { ICover } from "../Cover/types";
 import { ITag } from "../Tag/types";
 
 const {
-    color: { white_1, transparentLightGray, transparentDarkGray },
+    color: { white_1, transparentDarkGray },
     fontSize: { large_1 },
 } = myTheme;
 
