@@ -4,6 +4,8 @@ interface ITag {
     tagStyles: {
         color: ColorType;
         zIndex?: string;
+        position?: string;
+        bottom?: string;
     };
 }
 

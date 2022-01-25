@@ -5,6 +5,7 @@ import Services from "../domain/Services";
 import CaseStudies from "../domain/CaseStudies";
 import Technologies from "../domain/Technologies";
 import Products from "../domain/Products";
+import AboutUs from "../domain/AboutUs";
 import { graphql } from "gatsby";
 import { createContext } from "react";
 
@@ -41,6 +42,7 @@ const IndexPage = ({ data: { allFile } }) => {
                 <CaseStudies />
                 <Technologies />
                 <Products />
+                <AboutUs />
             </Layout>
         </PageContext.Provider>
     );
@@ -67,7 +69,15 @@ export const indexPageData = graphql`
             edges {
                 node {
                     childImageSharp {
-                        gatsbyImageData
+                        gatsbyImageData(
+                            transformOptions: {
+                                duotone: {
+                                    highlight: "#000000"
+                                    opacity: 50
+                                    shadow: "#000000"
+                                }
+                            }
+                        )
                     }
                 }
             }

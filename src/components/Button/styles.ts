@@ -7,16 +7,20 @@ const borderWidth = "2px";
 const borderRadius = "5px";
 
 const {
-    color: { white_1, defaultBrand, gray },
+    color: { white_1, defaultBrand, transparentDefaultBrand },
     fontSize: { medium_1 },
-    fontWeight: { bold },
 } = myTheme;
 
 const Styles = {
     BtnWrapper: styled.div`
         position: relative;
+        transition: 0.5s;
+        &:hover {
+            background-color: ${transparentDefaultBrand};
+        }
     `,
     Btn: styled.button`
+        position: relative;
         font-family: "Exo", sans-serif;
         background-color: transparent;
         color: ${white_1};
@@ -26,6 +30,7 @@ const Styles = {
         outline: none;
         transition: 0.3s;
         border: none;
+        z-index: 20;
         &:hover {
             cursor: pointer;
         }

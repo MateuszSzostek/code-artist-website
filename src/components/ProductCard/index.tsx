@@ -9,6 +9,8 @@ import {
     styles_cover,
     styles_flexColProperties,
     styles_tagStyles,
+    styles_flexRowTags,
+    styles_flexRowButtons,
 } from "./styles";
 import { useIntl } from "gatsby-plugin-react-intl";
 import FlexCol from "../FlexCol";
@@ -32,8 +34,6 @@ const ProductCard = ({
 }: PropsWithChildren<IProductCard>) => {
     const Intl = useIntl();
 
-    console.log(tags);
-
     return (
         <CardContainer>
             <BackgroundImage image={gatsbyImageData} alt={title} />
@@ -44,17 +44,17 @@ const ProductCard = ({
                     <H3 {...styles_productCardTitleText}>
                         {Intl.formatMessage({ id: title })}
                     </H3>
-                    <FlexRow>
-                        {tags.map((tag) => {
-                            <Tag key={tag} {...styles_tagStyles}>
-                                {Intl.formatMessage({ id: tag })}
-                            </Tag>;
-                        })}
+                    <FlexRow {...styles_flexRowTags}>
+                        {tags.map(({ name }) => (
+                            <Tag key={name} {...styles_tagStyles}>
+                                {Intl.formatMessage({ id: name })}
+                            </Tag>
+                        ))}
                     </FlexRow>
                     <P {...styles_productCardText}>
                         {Intl.formatMessage({ id: description })}
                     </P>
-                    <FlexRow>
+                    <FlexRow {...styles_flexRowButtons}>
                         <Button>
                             {Intl.formatMessage({ id: "Learn More" })}
                         </Button>

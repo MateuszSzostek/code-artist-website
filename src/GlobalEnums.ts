@@ -17,7 +17,7 @@ enum ColorsEnum {
     gray = "#1A1A1A",
     white_1 = "#F4F4F4",
     defaultBrand = "#1485D4",
-    transparentDefaultBrand = "rgba(37, 150, 190, 1)",
+    transparentDefaultBrand = "rgba(37, 150, 190, 0.5)",
     facebookBlue = "#4267B2",
     transparentDarkBlack = "rgba(1, 1, 1, 0.8)",
     transparentDarkGray = "rgba(0.4, 0.4, 0.4, 0.4)",

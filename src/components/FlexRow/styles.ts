@@ -6,7 +6,13 @@ const Styles = {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        gap: 0.5rem;
+        justify-content: ${({ flexRowProperties: { center } }) =>
+            center !== null && center === true ? "center" : "flex-start"};
+        position: ${({ flexRowProperties: { position } }) =>
+            position !== null && position};
+        bottom: ${({ flexRowProperties: { bottom } }) =>
+            bottom !== null && bottom};
     `,
 };
 

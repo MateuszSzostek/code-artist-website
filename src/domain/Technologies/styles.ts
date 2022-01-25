@@ -5,6 +5,7 @@ import { IH2 } from "../../components/H2/types";
 import { IContainer } from "../../components/Container/types";
 import { IGrid } from "../../components/Grid/types";
 import { IH3 } from "../../components/H3/types";
+import IFlexRow from "../../components/FlexRow/types";
 
 const {
     color: { black },
@@ -61,6 +62,12 @@ const styles_technologiesSubtitle: IH3 = {
     },
 };
 
+const styles_flexRow: IFlexRow = {
+    flexRowProperties: {
+        center: true,
+    },
+};
+
 export default Styles;
 export {
     styles_technologiesText,
@@ -69,4 +76,5 @@ export {
     styles_gridProperties,
     styles_technologiesSubtitle,
     styles_technologiesSubText,
+    styles_flexRow,
 };

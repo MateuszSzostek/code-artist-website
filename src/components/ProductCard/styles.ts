@@ -6,6 +6,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import { ICover } from "../Cover/types";
 import { IFlexCol } from "../FlexCol/types";
 import { ITag } from "../Tag/types";
+import IFlexRow from "../FlexRow/types";
 
 const {
     color: { transparentDefaultBrand, transparentDarkBlack, white_1 },
@@ -78,6 +79,20 @@ const styles_tagStyles: ITag = {
     },
 };
 
+const styles_flexRowTags: IFlexRow = {
+    flexRowProperties: {
+        center: false,
+    },
+};
+
+const styles_flexRowButtons: IFlexRow = {
+    flexRowProperties: {
+        center: false,
+        position: "absolute",
+        bottom: "2rem",
+    },
+};
+
 export default Styles;
 export {
     styles_productCardText,
@@ -85,4 +100,6 @@ export {
     styles_cover,
     styles_flexColProperties,
     styles_tagStyles,
+    styles_flexRowTags,
+    styles_flexRowButtons,
 };

@@ -9,21 +9,19 @@ const {
 
 const Styles = {
     Background: styled.div<ITag>`
-        position: absolute;
+        position: ${({ tagStyles: { position } }) =>
+            position !== null ? position : "relative"};
         padding: 0.6rem 1.4rem 0.6rem 1.4rem;
-        background-color: ${({ color }) =>
-            typeof color !== "undefined" &&
-            css`
-                color: ${color};
-            `};
+        background-color: ${({ tagStyles: { color } }) =>
+            color !== null && color};
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin: auto;
+        margin: 0;
         color: ${white_1};
         z-index: 30;
-        bottom: 1.5rem;
+        bottom: ${({ tagStyles: { bottom } }) => bottom !== null && bottom};
         font-size: ${small_2};
     `,
 };

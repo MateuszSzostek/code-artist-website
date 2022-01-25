@@ -8,6 +8,8 @@ const {
 
 const Styles = {
     Wrapper: styled.section<IContainer>`
+        margin-left: 15px;
+        margin-right: 15px;
         display: flex;
         flex-direction: column;
         z-index: 50;
@@ -47,8 +49,6 @@ const Styles = {
         }
     `,
     Content: styled.div`
-        margin-left: 15px;
-        margin-right: 15px;
         width: 100%;
     `,
 };

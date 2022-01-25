@@ -3,6 +3,7 @@ import {
     styles_technologiesText,
     styles_technologiesTitleText,
     styles_containerProperties,
+    styles_flexRow,
 } from "./styles";
 import H2 from "../../components/H2";
 import P from "../../components/P";
@@ -22,7 +23,7 @@ const Technologies = () => {
             <P {...styles_technologiesText}>
                 {intl.formatMessage({ id: "Technologies Text" })}
             </P>
-            <FlexRow>
+            <FlexRow {...styles_flexRow}>
                 {technologyCardsData.map((card) => (
                     <TechnologyCard key={card.id} {...card} />
                 ))}

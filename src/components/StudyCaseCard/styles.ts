@@ -60,6 +60,8 @@ const styles_tagStyles: ITag = {
     tagStyles: {
         color: transparentDarkGray,
         zIndex: "10",
+        bottom: "1.5rem",
+        position: "absolute",
     },
 };
 
