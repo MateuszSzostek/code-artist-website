@@ -27,6 +27,8 @@ const Styles = {
             "Text4 Picture5 Picture5 Text5";
     `,
     AboutUsPicture: styled(GatsbyImage)<IAboutUsPicture>`
+        width: 100%;
+        height: 100%;
         grid-area: ${({ gridName }) => gridName};
     `,
     AboutUsText: styled.p<IAboutUsText>`

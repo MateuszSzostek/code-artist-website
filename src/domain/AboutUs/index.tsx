@@ -1,33 +1,55 @@
-import React, { useContext } from "react";
+import React from "react";
 import Styles, {
     styles_aboutUsText,
     styles_aboutUsTitle,
-    styles_gridProperties,
     styles_containerProperties,
 } from "./styles";
 import H2 from "../../components/H2";
 import P from "../../components/P";
 import { useIntl } from "gatsby-plugin-react-intl";
 import Container from "./../../components/Container";
-import Grid from "../../components/Grid";
-import caseStudiesCardsData from "../../data/page_data/caseStudiesData";
-import { PageContext } from "../../pages";
 import {
     aboutUsTextsData,
     aboutUsPicturesData,
 } from "../../data/page_data/aboutUsData";
+import { graphql, useStaticQuery } from "gatsby";
 
 const { AboutUsGrid, AboutUsPicture, AboutUsText, AboutUsTitle } = Styles;
 
 const AboutUs = () => {
     const intl = useIntl();
-    const {
-        pageData: {
-            caseStudyData: { edges },
-        },
-    } = useContext(PageContext);
 
-    caseStudiesCardsData.map((item, index) => {
+    const aboutUsData = useStaticQuery(graphql`
+        query AboutUsQuery {
+            allFile(
+                filter: {
+                    name: {
+                        in: [
+                            "about-us-1"
+                            "about-us-2"
+                            "about-us-3"
+                            "about-us-4"
+                            "about-us-5"
+                        ]
+                    }
+                }
+            ) {
+                edges {
+                    node {
+                        childImageSharp {
+                            gatsbyImageData
+                        }
+                    }
+                }
+            }
+        }
+    `);
+
+    const {
+        allFile: { edges },
+    } = aboutUsData;
+
+    aboutUsPicturesData.map((item, index) => {
         item.image = { ...edges[index] };
     });
 
@@ -45,13 +67,15 @@ const AboutUs = () => {
                 </AboutUsTitle>
                 {aboutUsTextsData.map((text) => (
                     <AboutUsText key={text.id} {...text}>
-                        {intl.formatMessage({ id: text.id })}
+                        {intl.formatMessage({ id: text.text })}
                     </AboutUsText>
                 ))}
                 {aboutUsPicturesData.map((picture) => (
                     <AboutUsPicture
                         key={picture.id}
-                        image={picture.image}
+                        image={
+                            picture.image.node.childImageSharp.gatsbyImageData
+                        }
                         id={picture.id}
                         gridName={picture.gridName}
                         alt=""
