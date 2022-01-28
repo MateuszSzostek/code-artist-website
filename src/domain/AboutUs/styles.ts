@@ -1,3 +1,4 @@
+import { css } from "styled-components";
 import { myTheme } from "../../MyTheme";
 import { IP } from "../../components/P";
 import { IH2 } from "../../components/H2/types";
@@ -9,7 +10,7 @@ import { IAboutUsPicture, IAboutUsText } from "./types";
 
 const {
     color: { black, white_1 },
-    fontSize: { medium_1, huge_1 },
+    fontSize: { medium_1, huge_1, huge_3 },
     gridType: { quadruple },
 } = myTheme;
 
@@ -17,7 +18,7 @@ const Styles = {
     AboutUsGrid: styled.div`
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -27,15 +28,33 @@ const Styles = {
             "Text4 Picture5 Picture5 Text5";
     `,
     AboutUsPicture: styled(GatsbyImage)<IAboutUsPicture>`
-        width: 100%;
         height: 100%;
+        ${({ isSquare }) =>
+            isSquare !== null && isSquare === true
+                ? css`
+                      aspect-ratio: 1 / 1;
+                  `
+                : css`
+                      width: 100%;
+                  `}
+        aspect-ratio: 1 / 1;
         grid-area: ${({ gridName }) => gridName};
     `,
     AboutUsText: styled.p<IAboutUsText>`
         grid-area: ${({ gridName }) => gridName};
+        padding: 1.5rem;
+        margin: 0;
+        ${({ backgroundColor }) => css`
+            background-color: ${backgroundColor};
+        `}
+        ${({ color }) => css`
+            color: ${color};
+        `}
     `,
     AboutUsTitle: styled.h3`
         grid-area: "Title";
+        font-size: ${huge_3};
+        margin: 1.5rem;
     `,
 };
 
@@ -69,7 +88,6 @@ const styles_containerProperties: IContainer = {
     containerProperties: {
         centerContent: true,
         verticalPadding: "1rem",
-        fullWidth: true,
     },
 };
 

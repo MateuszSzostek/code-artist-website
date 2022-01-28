@@ -82,6 +82,9 @@ const AboutUs = () => {
                     />
                 ))}
             </AboutUsGrid>
+            <H2 {...styles_aboutUsTitle}>
+                {intl.formatMessage({ id: "About Us Title" })}
+            </H2>
         </Container>
     );
 };
