@@ -11,6 +11,7 @@ import {
     styles_tagStyles,
     styles_flexRowTags,
     styles_flexRowButtons,
+    styles_buttonProperties,
 } from "./styles";
 import { useIntl } from "gatsby-plugin-react-intl";
 import FlexCol from "../FlexCol";
@@ -55,10 +56,10 @@ const ProductCard = ({
                         {Intl.formatMessage({ id: description })}
                     </P>
                     <FlexRow {...styles_flexRowButtons}>
-                        <Button>
+                        <Button {...styles_buttonProperties}>
                             {Intl.formatMessage({ id: "Learn More" })}
                         </Button>
-                        <Button>
+                        <Button {...styles_buttonProperties}>
                             {Intl.formatMessage({ id: "Visit Website" })}
                         </Button>
                     </FlexRow>

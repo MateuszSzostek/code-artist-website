@@ -24,6 +24,11 @@ const Styles = {
                 text-decoration: underline;
                 text-decoration-color: ${defaultBrand};
             `}
+        ${({ headerStyles: { margin } }) =>
+            margin !== null &&
+            css`
+                margin: ${margin};
+            `}
     `,
 };
 

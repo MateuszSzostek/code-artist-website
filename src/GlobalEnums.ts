@@ -1,7 +1,7 @@
 enum FontSizesEnum {
-    small_1 = "0,875rem",
+    small_1 = "0.875rem",
     small_2 = "1rem",
-    medium_1 = "1,125rem",
+    medium_1 = "1.125rem",
     medium_2 = "1.25rem",
     medium_3 = "1.375rem",
     large_1 = "1.5rem",
@@ -31,6 +31,7 @@ enum FontWeightsEnum {
 }
 enum GridTypeEnum {
     double = "double",
+    triple = "triple",
     quadruple = "quadruple",
 }
 enum BreakPointsEnum {

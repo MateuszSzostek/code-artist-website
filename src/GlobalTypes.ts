@@ -19,6 +19,7 @@ interface IFontSizes {
 
 interface IGridType {
     double: GridTypeEnum.double;
+    triple: GridTypeEnum.triple;
     quadruple: GridTypeEnum.quadruple;
 }
 

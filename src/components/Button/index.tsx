@@ -5,9 +5,9 @@ import { IButton } from "./types";
 const { Btn, BtnWrapper, BorderBottom, BorderLeft, BorderRight, BorderTop } =
     Styles;
 
-const Button = ({ children }: PropsWithChildren<IButton>) => {
+const Button = ({ children, buttonProperties }: PropsWithChildren<IButton>) => {
     return (
-        <BtnWrapper>
+        <BtnWrapper buttonProperties={buttonProperties}>
             <Btn>{children}</Btn>
             <BorderRight />
             <BorderTop />

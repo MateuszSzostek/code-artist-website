@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { IButton } from "../../components/Button/types";
 import { myTheme } from "../../MyTheme";
 
 const {
@@ -25,4 +26,9 @@ const Styles = {
     `,
 };
 
+const styles_buttonProperties: IButton = {
+    buttonProperties: {},
+};
+
 export default Styles;
+export { styles_buttonProperties };

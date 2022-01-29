@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from "./styles";
-import ButtonTextInputForm from "../../components/ButtonTextInputForm";
+import { styles_buttonProperties } from "./styles";
 import NavLink from "../../components/NavLink";
 import StoreLink from "../../components/StoreLink";
 import Button from "../../components/Button";
@@ -19,7 +19,7 @@ const Navigation = () => {
                         {item.text}
                     </NavLink>
                 ))}
-                <Button>CONTACT</Button>
+                <Button {...styles_buttonProperties}>CONTACT</Button>
             </NavLinks>
         </Wrapper>
     );

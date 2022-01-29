@@ -6,6 +6,7 @@ interface IH2 {
         color: ColorType;
         center?: boolean;
         underline?: boolean;
+        margin?: string;
     };
 }
 

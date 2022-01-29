@@ -1,7 +1,6 @@
 import styled, { css } from "styled-components";
 import { myTheme } from "../../MyTheme";
-
-import { btnColors } from "./helpers";
+import { IButton } from "./types";
 
 const borderWidth = "2px";
 const borderRadius = "5px";
@@ -12,12 +11,18 @@ const {
 } = myTheme;
 
 const Styles = {
-    BtnWrapper: styled.div`
+    BtnWrapper: styled.div<IButton>`
+        display: inline-block;
         position: relative;
         transition: 0.5s;
         &:hover {
             background-color: ${transparentDefaultBrand};
         }
+        ${({ buttonProperties: { margin } }) =>
+            margin !== null &&
+            css`
+                margin: ${margin};
+            `}
     `,
     Btn: styled.button`
         position: relative;

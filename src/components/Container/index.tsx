@@ -4,7 +4,7 @@ import { IContainer } from "./types";
 
 const { Wrapper, Content } = Styles;
 
-const Button = ({
+const Container = ({
     children,
     containerProperties,
 }: PropsWithChildren<IContainer>) => {
@@ -15,4 +15,4 @@ const Button = ({
     );
 };
 
-export default Button;
+export default Container;

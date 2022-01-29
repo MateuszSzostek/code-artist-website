@@ -7,6 +7,7 @@ import { ICover } from "../Cover/types";
 import { IFlexCol } from "../FlexCol/types";
 import { ITag } from "../Tag/types";
 import IFlexRow from "../FlexRow/types";
+import { IButton } from "../Button/types";
 
 const {
     color: { transparentDefaultBrand, transparentDarkBlack, white_1 },
@@ -93,6 +94,10 @@ const styles_flexRowButtons: IFlexRow = {
     },
 };
 
+const styles_buttonProperties: IButton = {
+    buttonProperties: {},
+};
+
 export default Styles;
 export {
     styles_productCardText,
@@ -102,4 +107,5 @@ export {
     styles_tagStyles,
     styles_flexRowTags,
     styles_flexRowButtons,
+    styles_buttonProperties,
 };

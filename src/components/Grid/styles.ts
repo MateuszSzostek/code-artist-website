@@ -3,14 +3,18 @@ import { myTheme } from "../../MyTheme";
 import { IGrid } from "./types";
 
 const {
-    breakPoints: { desktop, tablet },
+    breakPoints: { desktop, tablet, mobile },
 } = myTheme;
 
 const Styles = {
     GridContainer: styled.div<IGrid>`
         display: grid;
         width: 100%;
-
+        ${({ gridProperties: { margin } }) =>
+            margin !== null &&
+            css`
+                margin: ${margin};
+            `};
         ${({ gridProperties: { gridType } }) =>
             String(gridType) == "double" &&
             css`
@@ -19,6 +23,16 @@ const Styles = {
                 @media (max-width: ${desktop}) {
                     grid-template-columns: 1fr;
                     grid-template-areas: ". ";
+                }
+            `};
+        ${({ gridProperties: { gridType } }) =>
+            String(gridType) == "triple" &&
+            css`
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas: ". . .";
+                @media (max-width: ${mobile}) {
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-areas: ". .";
                 }
             `};
         ${({ gridProperties: { gridType } }) =>
