@@ -8,6 +8,7 @@ import { IContainer } from "../../components/Container/types";
 import { IGrid } from "../../components/Grid/types";
 import { IInputField } from "../../components/InputField/types";
 import { ITextareaInputField } from "../../components/Textarea/types";
+import IFlexRow from "../../components/FlexRow/types";
 
 const {
     color: { white_1, gray },
@@ -133,6 +134,12 @@ const styles_buttonProperties: IButton = {
         margin: "20px 0 30px 0",
     },
 };
+const styles_flexRowSocialIcons: IFlexRow = {
+    flexRowProperties: {
+        center: true,
+        margin: "7rem 0 0 0",
+    },
+};
 
 export default Styles;
 export {
@@ -148,4 +155,5 @@ export {
     styles_buttonProperties,
     styles_footerLinkGridProperties,
     styles_footerLinksTitle,
+    styles_flexRowSocialIcons,
 };

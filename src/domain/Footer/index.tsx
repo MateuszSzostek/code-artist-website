@@ -12,6 +12,7 @@ import Styles, {
     styles_buttonProperties,
     styles_footerLinkGridProperties,
     styles_footerLinksTitle,
+    styles_flexRowSocialIcons,
 } from "./styles";
 import H2 from "../../components/H2";
 import P from "../../components/P";
@@ -24,7 +25,10 @@ import InputField from "../../components/InputField";
 import Textarea from "../../components/Textarea";
 import Button from "../../components/Button";
 import footerLinksData from "../../data/page_data/footerLinksData";
+import socialIconsData from "../../data/page_data/socialIconsData";
 import FooterLink from "../../components/FooterLink";
+import FlexRow from "../../components/FlexRow";
+import SocialIcon from "../../components/SocialIcon";
 
 const { FooterGrid, FooterWrapper } = Styles;
 
@@ -98,7 +102,20 @@ const Footer = () => {
                                 )}
                             </Grid>
                         </GridElement>
-                        <GridElement gridArea="SocialMediaArea"></GridElement>
+                        <GridElement gridArea="SocialMediaArea">
+                            <FlexRow {...styles_flexRowSocialIcons}>
+                                {socialIconsData.map(
+                                    ({ id, image, altAtribute }) => (
+                                        <SocialIcon
+                                            key={id}
+                                            altAtribute={altAtribute}
+                                            image={image}
+                                            id={id}
+                                        />
+                                    )
+                                )}
+                            </FlexRow>
+                        </GridElement>
                         <GridElement gridArea="FreeArea"></GridElement>
                     </FooterGrid>
                 </FooterWrapper>

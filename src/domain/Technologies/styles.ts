@@ -65,6 +65,7 @@ const styles_technologiesSubtitle: IH3 = {
 const styles_flexRow: IFlexRow = {
     flexRowProperties: {
         center: true,
+        margin: "0 0 3rem 0",
     },
 };
 

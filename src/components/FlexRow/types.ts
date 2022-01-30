@@ -3,6 +3,7 @@ interface IFlexRow {
         center: boolean;
         position?: string;
         bottom?: string;
+        margin?: string;
     };
 }
 

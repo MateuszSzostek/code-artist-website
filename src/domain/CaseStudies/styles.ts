@@ -35,6 +35,7 @@ const styles_gridProperties: IGrid = {
     gridProperties: {
         position: "relative",
         gridType: quadruple,
+        margin: "0 0 5rem 0",
     },
 };
 

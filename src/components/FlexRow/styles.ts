@@ -13,6 +13,8 @@ const Styles = {
             position !== null && position};
         bottom: ${({ flexRowProperties: { bottom } }) =>
             bottom !== null && bottom};
+        margin: ${({ flexRowProperties: { margin } }) =>
+            margin !== null && margin};
     `,
 };
 

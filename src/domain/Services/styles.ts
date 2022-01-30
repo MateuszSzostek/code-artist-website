@@ -36,6 +36,7 @@ const styles_gridProperties: IGrid = {
     gridProperties: {
         gap: "3rem",
         gridType: quadruple,
+        margin: "3rem 0 5rem 0",
     },
 };
 

@@ -10,6 +10,11 @@ import vector_Docker from "../images/vector/docker.svg";
 import vector_ExpressJs from "../images/vector/express-js.svg";
 import vector_ElectronJs from "../images/vector/electron-js.svg";
 
+import vector_Facebook from "../images/vector/facebook.svg";
+import vector_Instagram from "../images/vector/instagram.svg";
+import vector_Pinterest from "../images/vector/pinterest.svg";
+import vector_Twitter from "../images/vector/twitter.svg";
+
 import raster_CaseStudy1 from "./raster/case-study-1.jpg";
 import raster_CaseStudy2 from "./raster/case-study-2.jpg";
 import raster_CaseStudy3 from "./raster/case-study-3.jpg";
@@ -30,6 +35,10 @@ const VectorImages = {
     vector_Docker,
     vector_ExpressJs,
     vector_ElectronJs,
+    vector_Facebook,
+    vector_Instagram,
+    vector_Pinterest,
+    vector_Twitter,
 };
 
 const RasterImages = {

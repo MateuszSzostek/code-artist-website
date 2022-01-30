@@ -7,12 +7,13 @@ import Button from "../../components/Button";
 import { navLinksData } from "./data";
 import Logo from "../../components/Logo";
 
-const { Wrapper, NavLinks } = Styles;
+const { Wrapper, NavLinks, Background } = Styles;
 
 const Navigation = () => {
     return (
         <Wrapper>
             <Logo />
+            <Background />
             <NavLinks>
                 {navLinksData.map((item) => (
                     <NavLink key={item.id} slug={item.slug}>
