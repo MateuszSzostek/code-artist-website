@@ -1,6 +1,6 @@
 module.exports = {
     //pathPrefix: ``,
-    pathPrefix: `/`,
+    pathPrefix: `/code-artist-gatsby-front-end`,
     siteMetadata: {
         title: `Intresting`,
         description: `Intresting`,
