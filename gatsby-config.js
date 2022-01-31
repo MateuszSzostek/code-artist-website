@@ -1,6 +1,6 @@
 module.exports = {
-    pathPrefix: ``,
-    //pathPrefix: `/`,
+    //pathPrefix: ``,
+    pathPrefix: `/`,
     siteMetadata: {
         title: `Intresting`,
         description: `Intresting`,
