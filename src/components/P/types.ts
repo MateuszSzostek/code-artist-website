@@ -7,6 +7,7 @@ interface IP {
         center?: boolean;
         width?: string;
         verticalMargin?: string;
+        horizontalMargin?: string;
     };
 }
 

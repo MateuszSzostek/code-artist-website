@@ -15,6 +15,9 @@ import vector_Instagram from "../images/vector/instagram.svg";
 import vector_Pinterest from "../images/vector/pinterest.svg";
 import vector_Twitter from "../images/vector/twitter.svg";
 
+import vector_Menu from "../images/vector/menu.svg";
+import vector_Close from "../images/vector/close.svg";
+
 import raster_CaseStudy1 from "./raster/case-study-1.jpg";
 import raster_CaseStudy2 from "./raster/case-study-2.jpg";
 import raster_CaseStudy3 from "./raster/case-study-3.jpg";
@@ -39,6 +42,8 @@ const VectorImages = {
     vector_Instagram,
     vector_Pinterest,
     vector_Twitter,
+    vector_Menu,
+    vector_Close,
 };
 
 const RasterImages = {

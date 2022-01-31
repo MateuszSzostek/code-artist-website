@@ -7,7 +7,6 @@ import { IButton } from "../../components/Button/types";
 const {
     color: { white_1 },
     fontSize: { medium_1, huge_2 },
-    breakPoints: { desktop },
 } = myTheme;
 
 const Styles = {

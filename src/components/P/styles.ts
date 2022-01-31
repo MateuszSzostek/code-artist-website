@@ -24,6 +24,12 @@ const Styles = {
                 margin-top: ${verticalMargin};
                 margin-bottom: ${verticalMargin};
             `}
+        ${({ paragraphStyles: { horizontalMargin } }) =>
+            horizontalMargin !== null &&
+            css`
+                margin-left: ${horizontalMargin};
+                margin-right: ${horizontalMargin};
+            `}
     `,
 };
 

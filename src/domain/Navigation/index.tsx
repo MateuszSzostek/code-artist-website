@@ -6,6 +6,7 @@ import StoreLink from "../../components/StoreLink";
 import Button from "../../components/Button";
 import { navLinksData } from "./data";
 import Logo from "../../components/Logo";
+import MenuButton from "../../components/MenuButton";
 
 const { Wrapper, NavLinks, Background } = Styles;
 
@@ -22,6 +23,7 @@ const Navigation = () => {
                 ))}
                 <Button {...styles_buttonProperties}>CONTACT</Button>
             </NavLinks>
+            <MenuButton />
         </Wrapper>
     );
 };

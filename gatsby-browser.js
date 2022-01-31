@@ -8,7 +8,7 @@ import store from "./src/store";
 export const wrapRootElement = ({ element }) => (
     <Provider store={store}>
         <div id="fb-root"></div>
-        <div id="fb-customer-chat" class="fb-customerchat"></div>
+        <div id="fb-customer-chat" className="fb-customerchat"></div>
         <GlobalStyles />
         <ThemeProvider theme={myTheme}>{element}</ThemeProvider>
     </Provider>

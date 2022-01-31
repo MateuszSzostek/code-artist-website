@@ -13,6 +13,7 @@ const Styles = {
         display: flex;
         flex-direction: column;
         z-index: 50;
+        overflow: hidden;
 
         ${({ containerProperties: { backgroundColor } }) =>
             backgroundColor !== null &&
@@ -50,6 +51,8 @@ const Styles = {
     `,
     Content: styled.div`
         width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
     `,
 };
 

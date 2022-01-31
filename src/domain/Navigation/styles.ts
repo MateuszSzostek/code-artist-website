@@ -39,6 +39,9 @@ const Styles = {
         align-items: center;
         height: 100%;
         z-index: 500;
+        @media only screen and (max-width: 880px) {
+            display: none;
+        }
     `,
 };
 

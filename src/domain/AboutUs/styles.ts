@@ -9,16 +9,17 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import { IAboutUsPicture, IAboutUsText } from "./types";
 
 const {
-    color: { black, white_1 },
+    color: { black },
     fontSize: { medium_1, huge_1, huge_3 },
     gridType: { quadruple },
+    breakPoints: { desktop, tablet, mobile },
 } = myTheme;
 
 const Styles = {
     AboutUsGrid: styled.div`
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: auto auto auto auto;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -26,6 +27,36 @@ const Styles = {
             "Text2 Text3 Picture4 Picture4"
             "Picture3 Text3 Picture4 Picture4"
             "Text4 Picture5 Picture5 Text5";
+        @media only screen and (max-width: ${tablet}) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas:
+                "Title Picture1 "
+                "Picture2 Text1"
+                "Text2 Text2"
+                "Text3 Picture3"
+                "Text3 Picture5"
+                "Text5 Text5"
+                "Picture4 Picture4"
+                "Picture4 Picture4"
+                "Text4 Text4";
+        }
+        @media only screen and (max-width: ${mobile}) {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "Title"
+                "Picture1"
+                "Text1"
+                "Picture2 "
+                "Text2"
+                "Picture3"
+                "Text3 "
+                "Picture5"
+                "Text5 "
+                "Picture4"
+                "Text4";
+        }
     `,
     AboutUsPicture: styled(GatsbyImage)<IAboutUsPicture>`
         height: 100%;
@@ -41,6 +72,7 @@ const Styles = {
         grid-area: ${({ gridName }) => gridName};
     `,
     AboutUsText: styled.p<IAboutUsText>`
+        display: flex;
         grid-area: ${({ gridName }) => gridName};
         padding: 1.5rem;
         margin: 0;
@@ -50,11 +82,14 @@ const Styles = {
         ${({ color }) => css`
             color: ${color};
         `}
+        align-items: center;
     `,
     AboutUsTitle: styled.h3`
+        display: flex;
         grid-area: "Title";
         font-size: ${huge_3};
         margin: 1.5rem;
+        align-items: center;
     `,
 };
 

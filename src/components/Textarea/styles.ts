@@ -5,6 +5,7 @@ const {
     color: { defaultBrand, white_1, black },
     fontSize: { small_1, large_1 },
     fontWeight: { bold },
+    breakPoints: { desktop },
 } = myTheme;
 
 const Styles = {
@@ -46,6 +47,9 @@ const Styles = {
         flex-direction: column;
         justify-content: center;
         margin-left: 15px;
+        @media (max-width: ${desktop}) {
+            margin-left: 0px;
+        }
     `,
 };
 

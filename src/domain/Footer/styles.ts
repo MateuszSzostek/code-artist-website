@@ -13,7 +13,7 @@ import IFlexRow from "../../components/FlexRow/types";
 const {
     color: { white_1, gray },
     fontSize: { medium_1, huge_1 },
-    breakPoints: { desktop },
+    breakPoints: { desktop, tablet, mobile },
     gridType: { double, triple },
 } = myTheme;
 
@@ -31,6 +31,17 @@ const Styles = {
         width: ${desktop};
         padding-left: 15px;
         padding-right: 15px;
+        @media (max-width: ${tablet}) {
+            grid-template-columns: 0.5fr 1fr 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas:
+                "FollowUsArea FollowUsArea FollowUsArea"
+                "SocialMediaArea SocialMediaArea SocialMediaArea"
+                "ContactUsArea ContactUsArea ContactUsArea"
+                "ContactFormArea ContactFormArea ContactFormArea"
+                "UsefullLinksArea UsefullLinksArea UsefullLinksArea";
+            width: ${desktop};
+        }
     `,
     FooterWrapper: styled.div`
         width: 100%;
@@ -137,7 +148,7 @@ const styles_buttonProperties: IButton = {
 const styles_flexRowSocialIcons: IFlexRow = {
     flexRowProperties: {
         center: true,
-        margin: "7rem 0 0 0",
+        margin: "4rem 0 0 0",
     },
 };
 

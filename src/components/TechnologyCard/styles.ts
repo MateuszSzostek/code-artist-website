@@ -5,6 +5,7 @@ const borderWidth = "0.2rem";
 
 const {
     color: { defaultBrand, black },
+    breakPoints: { tablet, mobile },
 } = myTheme;
 
 const Styles = {
@@ -16,6 +17,10 @@ const Styles = {
         align-items: center;
         width: 150px;
         height: 150px;
+        @media only screen and (max-width: ${mobile}) {
+            width: 100px;
+            height: 100px;
+        }
     `,
     CardBackground: styled.div`
         position: absolute;

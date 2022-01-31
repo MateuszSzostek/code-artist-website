@@ -10,6 +10,7 @@ const productCardsData: IProductCard[] = [
         tags: [{ name: "Product 1 Tag 1" }, { name: "Product 1 Tag 2" }],
         slug: "awesome-product-1-slug",
     },
+    /*
     {
         id: uuidv4(),
         image: {},
@@ -26,6 +27,7 @@ const productCardsData: IProductCard[] = [
         tags: [{ name: "Product 3 Tag 1" }, { name: "Product 3 Tag 2" }],
         slug: "awesome-product-3-slug",
     },
+    */
 ];
 
 export default productCardsData;

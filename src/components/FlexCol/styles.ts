@@ -10,6 +10,13 @@ const Styles = {
             css`
                 margin: ${margin};
             `}
+        @media (max-width: 1320px) {
+            ${({ flexColProperties: { margin } }) =>
+                typeof margin !== "undefined" &&
+                css`
+                    margin: 20px;
+                `}
+        }
     `,
 };
 

@@ -25,6 +25,13 @@ const Styles = {
         height: 500px;
         margin-top: 2rem;
         margin-bottom: 2rem;
+        @media (max-width: 1320px) {
+            height: 700px;
+        }
+        @media (max-width: 475px) {
+            height: 100%;
+            padding-bottom: 130px;
+        }
     `,
     ProductCardGrid: styled.div`
         display: grid;
@@ -32,16 +39,36 @@ const Styles = {
         grid-template-columns: 35% auto;
         grid-template-areas: ". .";
         z-index: 15;
+        @media (max-width: 1320px) {
+            display: flex;
+            flex-direction: column;
+            grid-template-columns: unset;
+            grid-template-areas: unset;
+            height: 100%;
+        }
     `,
     BackgroundImage: styled(GatsbyImage)`
+        top: 0;
         left: 0;
         position: absolute;
         min-width: 100%;
         height: 500px;
+        @media (max-width: 1320px) {
+            height: 700px;
+        }
+        @media (max-width: 475px) {
+            height: 100%;
+        }
     `,
     ProductImage: styled(GatsbyImage)`
         aspect-ratio: 1 / 1;
         height: 100%;
+        @media (max-width: 1320px) {
+            max-height: 300px;
+            width: 100%;
+            height: unset;
+            aspect-ratio: unset;
+        }
     `,
 };
 
