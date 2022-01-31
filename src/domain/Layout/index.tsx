@@ -7,6 +7,7 @@ const { Wrapper } = Styles;
 
 const Layout = ({ children }: PropsWithChildren<{}>) => {
     const [chatLoaded, setChatLoaded] = useState(false);
+    /*
     useEffect(() => {
         const loadChat = () => {
             window.removeEventListener("scroll", loadChat);
@@ -38,6 +39,7 @@ const Layout = ({ children }: PropsWithChildren<{}>) => {
             window.addEventListener("scroll", loadChat);
         }
     }, []);
+    */
     return (
         <Wrapper>
             <Navigation />
