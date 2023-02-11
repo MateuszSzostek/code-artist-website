@@ -1,0 +1,12 @@
+.nav__burger {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .nav__links-container {
+    display: none;
+  }
+  .nav__burger {
+    display: block;
+  }
+}

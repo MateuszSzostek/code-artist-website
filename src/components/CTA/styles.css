@@ -1,0 +1,7 @@
+.cta {
+  transition: 0.3s;
+}
+
+.cta:hover {
+  color: var(--primary);
+}

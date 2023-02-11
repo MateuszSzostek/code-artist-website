@@ -1,0 +1,24 @@
+.input__field {
+  background-color: transparent;
+  border-top: 1px solid var(--accent1);
+  border-left: 1px solid var(--accent1);
+  border-bottom: 1px solid var(--primary);
+  border-right: 1px solid var(--primary);
+  border-radius: 5px;
+  color: var(--secondaryText);
+  padding: 6px;
+}
+
+.input__wrapper {
+  margin: 8px 0;
+}
+
+.input__field::placeholder {
+  color: var(--primary);
+}
+
+.input__label {
+  color: var(--secondaryText);
+  font-size: 24px;
+  font-weight: bold;
+}

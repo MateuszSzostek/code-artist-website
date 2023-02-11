@@ -1,0 +1,14 @@
+@keyframes rotate {
+  0% {
+    transform: rotateZ(360deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  animation: rotate 1.5s infinite linear;
+}

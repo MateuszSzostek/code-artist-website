@@ -1,0 +1,12 @@
+.content__container {
+  margin: 32px 0 32px 0;
+}
+
+.content__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ". . . .";
+}

@@ -1,0 +1,23 @@
+:root {
+  --primary: #1485d4;
+  --secondary: #c7e4ff;
+  --primaryText: #1e1e1e;
+  --secondaryText: #dddddd;
+
+  --gradient1: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(230, 243, 255, 1) 40%,
+    rgba(199, 228, 255, 1) 100%
+  );
+
+  --black: #1e1e1e;
+  --white: #c7e4ff;
+
+  --bpSm: 550px;
+  --bpMd: 768px;
+  --bpXl: 1024px;
+  --bpXxl: 1440px;
+
+  --accent1: #bdbdbd;
+}

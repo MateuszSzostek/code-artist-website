@@ -1,0 +1,11 @@
+.section__container {
+  width: var(--bpXxl);
+  margin: 0 15px 0 15px;
+  height: 100%;
+}
+
+@media only screen and (max-width: var(--bpXxl)) {
+  .section__container {
+    width: 100%;
+  }
+}

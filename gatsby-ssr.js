@@ -1,15 +1,13 @@
 import React from "react";
-import { ThemeProvider } from "styled-components";
-import { myTheme } from "./src/MyTheme.ts";
-import GlobalStyles from "./src/GlobalStyles";
-import { Provider } from "react-redux";
-import store from "./src/store";
+import "./src/assets/styles/global.css";
+import "./src/assets/styles/theme.css";
+
+import "prismjs/themes/prism-tomorrow.css";
 
 export const wrapRootElement = ({ element }) => (
-    <Provider store={store}>
-        <div id="fb-root"></div>
-        <div id="fb-customer-chat" className="fb-customerchat"></div>
-        <GlobalStyles />
-        <ThemeProvider theme={myTheme}>{element}</ThemeProvider>
-    </Provider>
+  <>
+    <div id="fb-root"></div>
+    <div id="fb-customer-chat" className="fb-customerchat"></div>
+    {element}
+  </>
 );

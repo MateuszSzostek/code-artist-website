@@ -1,0 +1,230 @@
+.about-us__container {
+  margin: 64px 0;
+}
+
+.about-us__container > p {
+  margin-bottom: 64px;
+}
+
+.about-us__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 340px 340px 340px 340px;
+
+  grid-auto-flow: row;
+  grid-template-areas:
+    "text-area-1 image-area-1 text-area-2 image-area-2"
+    "text-area-3 text-area-4 image-area-3 image-area-3"
+    "image-area-4 text-area-4 image-area-3 image-area-3"
+    "text-area-5 image-area-5 image-area-5 text-area-6";
+}
+
+.about-us__image-wrapper {
+  max-width: 100%;
+
+  height: 100%;
+}
+
+.about-us__grid-border-1,
+.about-us__grid-border-2 {
+  height: 26px !important;
+  background-color: var(--primary) !important;
+  width: calc(100vw - 15px) !important;
+}
+
+.about-us__grid-border-1 {
+  top: 604px;
+}
+
+.about-us__grid-border-2 {
+  top: 1284px;
+}
+
+.about-us__grid > div {
+  max-width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  max-height: 100%;
+}
+
+.about-us__text-area > p {
+  text-align: left;
+  margin: 24px;
+}
+
+.text-area-1 {
+  grid-area: text-area-1;
+  box-sizing: border-box;
+  border-bottom: 13px solid var(--primary);
+}
+
+.text-area-1 > h3 > span {
+  color: var(--primary);
+}
+
+.text-area-1 > h3 {
+  font-size: 60px;
+}
+
+.image-area-1 {
+  grid-area: image-area-1;
+  border-bottom: 13px solid var(--primary);
+}
+
+.text-area-2 {
+  grid-area: text-area-2;
+  border-bottom: 13px solid var(--primary);
+}
+
+.image-area-2 {
+  grid-area: image-area-2;
+  border-bottom: 13px solid var(--primary);
+}
+
+.text-area-3 {
+  grid-area: text-area-3;
+  border-right: 13px solid var(--primary);
+  border-top: 13px solid var(--primary);
+}
+
+.image-area-3 {
+  grid-area: image-area-3;
+  border-top: 13px solid var(--primary);
+  border-left: 13px solid var(--primary);
+  border-bottom: 13px solid var(--primary);
+}
+
+.text-area-4 {
+  grid-area: text-area-4;
+  border: 13px solid var(--primary);
+  background-color: var(--black);
+}
+
+.text-area-4 > p {
+  color: var(--secondaryText);
+}
+
+.image-area-4 {
+  grid-area: image-area-4;
+  border-right: 13px solid var(--primary);
+  border-bottom: 13px solid var(--primary);
+}
+
+.text-area-5 {
+  grid-area: text-area-5;
+  border-top: 13px solid var(--primary);
+}
+
+.image-area-5 {
+  grid-area: image-area-5;
+  border-top: 13px solid var(--primary);
+}
+
+.text-area-6 {
+  grid-area: text-area-6;
+  border-top: 13px solid var(--primary);
+}
+
+@media only screen and (max-width: 1220px) {
+  .about-us__grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 340px 340px;
+    grid-auto-flow: initial;
+    grid-template-areas:
+      "text-area-1 image-area-1"
+      "text-area-2 image-area-2"
+      "text-area-3 text-area-4"
+      "image-area-4 text-area-4"
+      "image-area-3 image-area-3"
+      "image-area-3 image-area-3"
+      "text-area-5 image-area-5"
+      "text-area-6 image-area-5";
+  }
+
+  .about-us__grid-border-1 {
+    display: none;
+  }
+
+  .about-us__grid-border-2 {
+    display: none;
+  }
+
+  .text-area-1 {
+    border-right: 13px solid var(--primary);
+  }
+
+  .image-area-1 {
+    border-left: 13px solid var(--primary);
+  }
+
+  .text-area-2 {
+    border-top: 13px solid var(--primary);
+  }
+
+  .image-area-2 {
+    border-top: 13px solid var(--primary);
+  }
+
+  .text-area-4 {
+    border-left: none;
+    border-right: none;
+  }
+  .image-area-4 {
+    border-right: none;
+  }
+
+  .text-area-3 {
+    border-right: none;
+  }
+
+  .image-area-3 {
+    border-left: none;
+  }
+
+  .text-area-5 {
+    border-bottom: 13px solid var(--primary);
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .about-us__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 340px;
+    grid-auto-flow: initial;
+    grid-template-areas:
+      "text-area-1"
+      "image-area-1"
+      "text-area-2"
+      "image-area-2"
+      "text-area-3"
+      "image-area-3"
+      "text-area-4"
+      "image-area-4"
+      "text-area-5"
+      "image-area-5"
+      "text-area-6";
+  }
+
+  .text-area-2 {
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .image-area-2 {
+    border-bottom: none;
+  }
+
+  .text-area-4 {
+    border-top: none;
+  }
+
+  .text-area-5 {
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .text-area-1 > h3 {
+    font-size: 50px;
+  }
+}

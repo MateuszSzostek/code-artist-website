@@ -1,0 +1,27 @@
+.input-area__field {
+  background-color: transparent;
+  border-top: 1px solid var(--accent1);
+  border-left: 1px solid var(--accent1);
+  border-bottom: 1px solid var(--primary);
+  border-right: 1px solid var(--primary);
+  border-radius: 5px;
+  color: var(--secondaryText);
+  padding: 6px;
+  resize: none;
+  height: 100%;
+}
+
+.input-area__wrapper {
+  margin: 8px 0;
+  height: calc(100% - 16px);
+}
+
+.input-area__field::placeholder {
+  color: var(--primary);
+}
+
+.input-area__label {
+  color: var(--secondaryText);
+  font-size: 24px;
+  font-weight: bold;
+}

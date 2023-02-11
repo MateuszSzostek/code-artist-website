@@ -1,0 +1,8 @@
+.primary-pill {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 22px;
+  color: var(--secondaryText);
+  padding: 6px;
+  margin: 4px;
+  display: inline-block;
+}

@@ -1,0 +1,17 @@
+.button-appearance {
+  background-color: transparent;
+  border-top: 1px solid var(--accent1);
+  border-left: 1px solid var(--accent1);
+  border-bottom: 1px solid var(--primary);
+  border-right: 1px solid var(--primary);
+  border-radius: 5px;
+  color: var(--secondaryText);
+  padding: 12px 24px;
+  text-align: center;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.button-appearance:hover {
+  color: var(--primary);
+}

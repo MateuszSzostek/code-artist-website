@@ -1,18 +1,48 @@
 module.exports = {
-    //pathPrefix: ``,
-    pathPrefix: `/code-artist-gatsby-front-end`,
-    siteMetadata: {
-        title: `Intresting`,
-        description: `Intresting`,
-        author: `Mateusz Szostek`,
-        siteUrl: "https://www.awesome-test-website.com",
+  //pathPrefix: ``,
+  pathPrefix: `/code-artist-gatsby-front-end`,
+  siteMetadata: {
+    title: `Intresting`,
+    description: `Intresting`,
+    author: `Mateusz Szostek`,
+    siteUrl: "https://www.awesome-test-website.com",
+  },
+  plugins: [
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: "CodeArtist",
+        icon: "src/assets/images/raster/logo/maskable_icon_x128.png",
+        background_color: "white",
+        theme_color: `#fff`,
+        icon_options: {
+          // For all the options available,
+          // please see the section "Additional Resources" below.
+          purpose: `any maskable`,
+        },
+        icons: [
+          {
+            src: "src/assets/images/raster/logo/maskable_icon_x128.png",
+            sizes: "128x128",
+            type: "image/png",
+          },
+          {
+            src: "src/assets/images/raster/logo/maskable_icon_x192.png",
+            sizes: "192x192",
+            type: "image/png",
+          },
+          {
+            src: "src/assets/images/raster/logo/maskable_icon_x512.png",
+            sizes: "512x512",
+            type: "image/png",
+          },
+        ],
+      },
     },
-    plugins: [
-        `babel-plugin-styled-components`,
-        `gatsby-plugin-sitemap`,
-        `gatsby-plugin-image`,
-        `gatsby-plugin-react-helmet`,
-        /*
+    `gatsby-plugin-image`,
+    `gatsby-plugin-react-helmet`,
+    /*
         {
             resolve: "gatsby-plugin-robots-txt",
             options: {
@@ -22,68 +52,62 @@ module.exports = {
             },
         },
         */
-        {
-            resolve: `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/assets`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/src/content`,
+      },
+    },
+    //  `gatsby-transformer-remark`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-typescript`,
+      options: {
+        isTSX: true, // defaults to false
+        jsxPragma: `jsx`, // defaults to "React"
+        allExtensions: true, // defaults to false
+      },
+    },
+    `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
             options: {
-                // Add any options here
+              withWebp: true,
+              showCaptions: true,
+              quality: 100,
+              maxWidth: 1200,
             },
-        },
-        {
-            resolve: `gatsby-source-filesystem`,
+          },
+          {
+            resolve: `gatsby-remark-prismjs`,
             options: {
-                name: `data`,
-                path: `${__dirname}/src/data`,
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+              prompt: {
+                user: "root",
+                host: "localhost",
+                global: false,
+              },
+              escapeEntities: {},
             },
-        },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                path: `${__dirname}/src/locales`,
-                name: `locale`,
-            },
-        },
-
-        {
-            resolve: `gatsby-plugin-react-intl`,
-            options: {
-                // language JSON resource path
-                path: `${__dirname}/src/locales`,
-                // supported language
-                languages: [`en`, `pl`],
-                // language file path
-                defaultLanguage: `pl`,
-                // option to redirect to `/ko` when connecting `/`
-                redirect: true,
-                // option for use / as defaultLangauge root path. if your defaultLanguage is `ko`, when `redirectDefaultLanguageToRoot` is true, then it will not generate `/ko/xxx` pages, instead of `/xxx`
-                redirectDefaultLanguageToRoot: false,
-                // paths that you don't want to genereate locale pages, example: ["/dashboard/","/test/**"], string format is from micromatch https://github.com/micromatch/micromatch
-                ignoredPaths: [],
-                // option to fallback to the defined language instead of the `defaultLanguage` if the user langauge is not in the list
-                fallbackLanguage: `en`,
-            },
-        },
-
-        //  `gatsby-transformer-remark`,
-        `gatsby-plugin-sharp`,
-        `gatsby-transformer-sharp`,
-        {
-            resolve: `gatsby-plugin-typescript`,
-            options: {
-                isTSX: true, // defaults to false
-                jsxPragma: `jsx`, // defaults to "React"
-                allExtensions: true, // defaults to false
-            },
-        },
-        {
-            resolve: `gatsby-transformer-remark`,
-            options: {
-                // Footnotes mode (default: true)
-                footnotes: true,
-                // GitHub Flavored Markdown mode (default: true)
-                gfm: true,
-                // Plugins configs
-                plugins: [],
-            },
-        },
-    ],
+          },
+        ],
+      },
+    },
+  ],
 };

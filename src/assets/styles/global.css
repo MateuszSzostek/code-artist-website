@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@100;400;500;600&display=swap");
+
+/*
+  to remove in production:
+*/
+
+/* */
+
+body,
+html {
+  font-family: "Exo", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.z-55 {
+  z-index: 55;
+}
+
+.z-100 {
+  z-index: 100;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-max-820 {
+  max-width: 820px;
+}
+
+.logo-title {
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin: 0 0 0 8px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h2 > span {
+  color: var(--primary);
+}
+h3 > span {
+  color: var(--primary);
+}
+
+p {
+  font-size: 1rem;
+}
+
+.p-12 {
+  padding: 12px;
+}
+
+.secondary-text-color {
+  color: var(--secondaryText);
+}
+
+.primary-text-color {
+  color: var(--primaryText) !important;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.brand-text-color {
+  color: var(--primary) !important;
+}
+
+.button {
+  color: var(--primaryText);
+  background-color: transparent;
+  padding: 2px;
+  transition: 0.3s;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+}
+
+a {
+  color: var(--primaryText);
+  text-decoration: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+@media only screen and (max-width: 1440px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.1rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+}
