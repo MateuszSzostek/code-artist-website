@@ -38,13 +38,16 @@ export const query = graphql`
 
 export const Head = (props) => {
   console.log(props);
-  console.log(process.env.DOMAIN);
+  console.log(process.env.GATSBY_DOMAIN);
   return (
     <SEO
       title="Code Artist - Software Development"
       description="We turn coffee into code and create websites faster than the speed of light. Need a new website? We've got you covered... or at least, covered in lines of code."
       keywords="Software development, Web development, Mobile app development, Custom software solutions, Full-stack development, Software architecture"
-      canonicalUrl={process.env.GATSBY_DOMAIN}
+      canonicalUrl={process.env.GATSBY_DOMAIN?.replace(
+        "code-artist-gatsby-front-end/",
+        ""
+      )}
       ogType="website"
       ogUrl={process.env.GATSBY_DOMAIN}
       ogTitle="Code Artist - Software Development"

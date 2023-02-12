@@ -26,11 +26,14 @@ const navigationLinks: INavigationLink[] = [
 ];
 
 const subNavigationLinks: INavigationLink[] = [
-  { id: 1, to: "/brief", name: "Brief" },
-  { id: 2, to: "/helpdesk", name: "Helpdesk" },
-  { id: 3, to: "/demo", name: "Demo" },
-  { id: 4, to: "/statement", name: "Statement" },
-  { id: 5, to: "/privacy-policy", name: "Privacy Policy" },
+  { id: 3, to: "/demos", name: "Demos" },
+  { id: 4, to: "/articles", name: "Articles" },
+  { id: 5, to: "/case-studies", name: "Case Studies" },
+  { id: 6, to: "/products", name: "Products" },
+  { id: 7, to: "/products", name: "Projects" },
+  { id: 8, to: "/technologies", name: "Technologies" },
+  { id: 9, to: "/tips", name: "Tips" },
+  { id: 10, to: "/privacy-policy", name: "Privacy Policy" },
 ];
 
 const landingTitle: string = "Unleash Your Business's Full Potential.";
