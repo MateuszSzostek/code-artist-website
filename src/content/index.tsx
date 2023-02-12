@@ -41,12 +41,24 @@ const landingCTA: ILandingCTA = {
   name: "Boost Your Business",
 };
 
+const technologiesSubtitle: string =
+  "Technology in software development is like a playground for tech geeks. There are all sorts of fun tools and toys to play with! We use the ones that allow us to develop software faster than you do when you leave work on Friday.";
+
+const technologiesSecondTitle: string =
+  "At Code Artist, we don't just sit around twiddling our thumbs! No sir, we're a team of tech wizards who love to dream big and tackle the impossible. From building websites that make you say 'wow' to creating software that'll have you doing cartwheels, we're always up for a challenge. And if you're looking for something truly mind-boggling, just ask us! We're like a team of mad scientists, always experimenting and coming up with new and exciting ways to solve problems. So if you're ready for some tech magic, give us a shout. We promise to make your wildest tech dreams come true.";
+
 const servicesTitle: string = "We speak your language";
 const servicesDescription: string =
   "Our services include custom software development where we'll turn your tech nightmares into tech-tastic dreams, mobile app development that will make sure your app is the apple of everyone's eye, and website development that will create a website that's too hot to handle.";
 
 const caseStudyDescription =
   "The software development company is a symphony of technical expertise and artistic flair. Their process begins with a carefully crafted composition of client requirements, setting the stage for their developers to bring the project to life with their creative coding abilities. Each line of code is a brush stroke on the canvas of the software they build. And when the time comes to present their masterpiece, the team conducts a beautifully choreographed demonstration that showcases the software's functionality and design in harmony. The end result is a work of art that both delights and inspires.";
+
+const followUsText: string =
+  "Ready to join the wild ride that is following us? Buckle up, it's going to be a crazy trip! You can find us on platforms like Twitter, Facebook, LinkedIn and Instagram. Just search for us under the handle Code Artist. We promise to post plenty of things about software development, our happy customers and the occasional video of a cat playing the piano.";
+
+const contactUsText: string =
+  "You can send us a smoke signal, or a carrier pigeon if you're feeling old school. Just make sure to attach a return address, or we might send a response via telegram (you know, the old-fashioned way). But if you're not into pigeons or smoke signals, you can always send us an email through the form below. We'll get back to you faster than a ninja in a hurry.";
 
 const servicesCards: IContentCard[] = [
   {
@@ -355,4 +367,8 @@ export {
   caseStudyDescription,
   technologyCards,
   productsCards,
+  technologiesSubtitle,
+  contactUsText,
+  followUsText,
+  technologiesSecondTitle,
 };

@@ -7,6 +7,7 @@ import { landingTitle, landingSubTitle, landingCTA } from "../../content";
 import useLandingImage from "../../hooks/data/useLandingImage";
 
 import ButtonAppearance from "../../components/Appearance/CodeArtistButton";
+import scrollTo from "gatsby-plugin-smoothscroll";
 
 const Landing = () => {
   const { landingImage } = useLandingImage();
@@ -22,9 +23,12 @@ const Landing = () => {
         <header>
           <h1>{landingTitle}</h1>
           <p>{landingSubTitle}</p>
-          <CTA to={landingCTA.to} className="inline-block mt-8">
+          <div
+            className="inline-block mt-8 cursor-pointer"
+            onClick={() => scrollTo("#contact-form")}
+          >
             <ButtonAppearance>{landingCTA.name}</ButtonAppearance>
-          </CTA>
+          </div>
         </header>
       </div>
     </SectionImage>

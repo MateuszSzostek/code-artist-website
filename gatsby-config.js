@@ -13,7 +13,7 @@ module.exports = {
       resolve: "gatsby-plugin-manifest",
       options: {
         name: "CodeArtist",
-        icon: "src/assets/images/raster/logo/maskable_icon_x128.png",
+        icon: "src/assets/images/raster/logo/ca-logo-128.png",
         background_color: "white",
         theme_color: `#fff`,
         icon_options: {
@@ -23,17 +23,27 @@ module.exports = {
         },
         icons: [
           {
-            src: "src/assets/images/raster/logo/maskable_icon_x128.png",
+            src: "src/assets/images/raster/logo/ca-logo-32.png",
+            sizes: "32x32",
+            type: "image/png",
+          },
+          {
+            src: "src/assets/images/raster/logo/ca-logo-64.png",
+            sizes: "64x64",
+            type: "image/png",
+          },
+          {
+            src: "src/assets/images/raster/logo/ca-logo-128.png",
             sizes: "128x128",
             type: "image/png",
           },
           {
-            src: "src/assets/images/raster/logo/maskable_icon_x192.png",
-            sizes: "192x192",
+            src: "src/assets/images/raster/logo/ca-logo-256.png",
+            sizes: "256x256",
             type: "image/png",
           },
           {
-            src: "src/assets/images/raster/logo/maskable_icon_x512.png",
+            src: "src/assets/images/raster/logo/ca-logo-512.png",
             sizes: "512x512",
             type: "image/png",
           },
@@ -109,5 +119,6 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-smoothscroll`,
   ],
 };

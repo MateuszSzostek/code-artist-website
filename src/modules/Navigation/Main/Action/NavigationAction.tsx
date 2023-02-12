@@ -12,6 +12,7 @@ import { companyName } from "../../../../content";
 import Burger from "../../../../components/Burger";
 import MobileNavigation from "../../Mobile";
 import Logo from "../../../../components/Logo";
+import useTawk from "../../../../hooks/useTawk";
 
 const NavigationAction = () => {
   const [mobileMenuActive, setMobileMenuActive] = useState<boolean>(false);
@@ -19,6 +20,8 @@ const NavigationAction = () => {
   const burgerButtonHandler = () => {
     setMobileMenuActive(!mobileMenuActive);
   };
+
+  const { onInteractClickHandler } = useTawk();
 
   return (
     <nav className="nav__container flex flex-space-between absolute">
@@ -28,8 +31,8 @@ const NavigationAction = () => {
       </header>
       <div className="nav__links-container">
         <MainLinks />
-        <Button>
-          <AppearanceButton>Action</AppearanceButton>
+        <Button onClick={onInteractClickHandler}>
+          <AppearanceButton>Talk to us</AppearanceButton>
         </Button>
       </div>
       <div className="nav__burger">

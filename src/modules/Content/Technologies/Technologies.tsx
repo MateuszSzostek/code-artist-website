@@ -1,20 +1,24 @@
 import React from "react";
 import "./styles.css";
 
-import CTA from "../../../components/CTA";
+import Button from "../../../components/Button";
 
 import SectionColored from "../../../components/Section/Colored/SectionColored";
 import TechnologiesCard from "../../../components/Card/Technologies/TechnologiesCard";
 
 import {
-  landingTitle,
-  landingSubTitle,
+  technologiesSecondTitle,
+  technologiesSubtitle,
   technologyCards,
 } from "../../../content";
 import { IContentCard } from "../../../types/components";
 import ButtonAppearance from "../../../components/Appearance/CodeArtistButton";
 
+import useTawk from "../../../hooks/useTawk";
+
 const Technologies = () => {
+  const { onInteractClickHandler } = useTawk();
+
   return (
     <SectionColored
       background="linear-gradient(
@@ -29,7 +33,7 @@ const Technologies = () => {
           Technologies <span>we use</span>
         </h2>
         <p className="technologies__text primary-text-color text-center">
-          {landingSubTitle}
+          {technologiesSubtitle}
         </p>
         <div className="technologies__grid flex flex-center">
           {technologyCards.map((card: IContentCard) => (
@@ -40,16 +44,13 @@ const Technologies = () => {
           We <span>don't stop</span> there
         </h2>
         <p className=" technologies__text text-center primary-text-color">
-          Cras dictum blandit ante, sed consectetur ante laoreet id. Maecenas
-          blandit ex ac lacus suscipit faucibus. Donec convallis fermentum
-          augue. Praesent varius massa non massa porttitor pellentesque. Nunc mi
-          nunc,{" "}
+          {technologiesSecondTitle}
         </p>
-        <CTA to="/" className="inline-block mt-8">
+        <Button onClick={onInteractClickHandler}>
           <ButtonAppearance className="primary-text-color">
             LET'S TALK
           </ButtonAppearance>
-        </CTA>
+        </Button>
       </div>
     </SectionColored>
   );

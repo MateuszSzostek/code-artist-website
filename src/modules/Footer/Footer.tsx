@@ -5,7 +5,7 @@ import "./styles.css";
 import SectionColored from "../../components/Section/Colored/SectionColored";
 import CardCodeArtistTechnologies from "../../components/Card/Technologies";
 
-import { landingTitle, landingSubTitle } from "../../content";
+import { followUsText, contactUsText } from "../../content";
 import CTA from "../../components/CTA";
 import Button from "../../components/Button";
 
@@ -26,12 +26,7 @@ const Footer = () => {
             <h2 className="text-left secondary-text-color">
               Follow <span>Us</span>
             </h2>
-            <p className="w-max-820">
-              Cras dictum blandit ante, sed consectetur ante laoreet id.
-              Maecenas blandit ex ac lacus suscipit faucibus. Donec convallis
-              fermentum augue. Praesent varius massa non massa porttitor
-              pellentesque. Nunc mi nunc,{" "}
-            </p>
+            <p className="w-max-820">{followUsText}</p>
           </div>
           <div className="footer__links">
             <CTA to="/">
@@ -48,16 +43,11 @@ const Footer = () => {
             </CTA>
           </div>
         </div>
-        <div className="footer__contact">
+        <div id="contact-form" className="footer__contact">
           <h2 className="text-left secondary-text-color">
             Contact <span>Us</span>
           </h2>
-          <p className="w-max-820">
-            Cras dictum blandit ante, sed consectetur ante laoreet id. Maecenas
-            blandit ex ac lacus suscipit faucibus. Donec convallis fermentum
-            augue. Praesent varius massa non massa porttitor pellentesque. Nunc
-            mi nunc,{" "}
-          </p>
+          <p className="w-max-820">{contactUsText}</p>
 
           <form className="footer__contact-form">
             <div>
