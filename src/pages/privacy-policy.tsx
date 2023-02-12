@@ -1,22 +1,22 @@
 import React from "react";
 import Layout from "../components/Layout";
-import SimpleTemplate from "../modules/SimpleTemplate";
-import SEO from "../components/SEO";
+import Landing from "../modules/Landing";
+import Services from "../modules/Content/Services";
+import CaseStudies from "../modules/Content/CaseStudies";
+import Technologies from "../modules/Content/Technologies";
+import Products from "../modules/Content/Products/Products";
+import AboutUs from "../modules/Content/AboutUs/AboutUs";
 import { graphql } from "gatsby";
+import SEO from "../components/SEO/SEO";
 
-const ArticleTemplate = (props) => {
-  console.log(props);
-  return (
-    <Layout>
-      <SimpleTemplate templateContent={props?.pageContext?.article} />
-    </Layout>
-  );
+const PrivacyPolicy = () => {
+  return <Layout></Layout>;
 };
 
-export default ArticleTemplate;
+export default PrivacyPolicy;
 
 export const query = graphql`
-  query articlePageQuery {
+  query privacyPolicyPageQuery {
     allFile(filter: { name: { eq: "ca-logo" }, extension: { eq: "png" } }) {
       edges {
         node {
@@ -28,8 +28,6 @@ export const query = graphql`
 `;
 
 export const Head = (props) => {
-  console.log(props);
-  console.log(process.env.GATSBY_DOMAIN);
   return (
     <SEO
       title="Code Artist - Software Development"

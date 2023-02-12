@@ -44,12 +44,12 @@ export const Head = (props) => {
       title="Code Artist - Software Development"
       description="We turn coffee into code and create websites faster than the speed of light. Need a new website? We've got you covered... or at least, covered in lines of code."
       keywords="Software development, Web development, Mobile app development, Custom software solutions, Full-stack development, Software architecture"
-      canonicalUrl={process.env.DOMAIN}
+      canonicalUrl={process.env.GATSBY_DOMAIN}
       ogType="website"
-      ogUrl={process.env.DOMAIN}
+      ogUrl={process.env.GATSBY_DOMAIN}
       ogTitle="Code Artist - Software Development"
       ogDescription="We turn coffee into code and create websites faster than the speed of light. Need a new website? We've got you covered... or at least, covered in lines of code."
-      ogImage={`${process.env.DOMAIN}${props?.data?.allFile?.edges[0].node?.publicURL}`}
+      ogImage={`${process.env.GATSBY_DOMAIN}${props?.data?.allFile?.edges[0].node?.publicURL}`}
       ogLocale="en_gb"
       //ogVideo,
       //ogVideoUrl,

@@ -1,22 +1,16 @@
 import React from "react";
 import Layout from "../components/Layout";
-import SimpleTemplate from "../modules/SimpleTemplate";
-import SEO from "../components/SEO";
 import { graphql } from "gatsby";
+import SEO from "../components/SEO/SEO";
 
-const ArticleTemplate = (props) => {
-  console.log(props);
-  return (
-    <Layout>
-      <SimpleTemplate templateContent={props?.pageContext?.article} />
-    </Layout>
-  );
+const DemosPage = () => {
+  return <Layout></Layout>;
 };
 
-export default ArticleTemplate;
+export default DemosPage;
 
 export const query = graphql`
-  query articlePageQuery {
+  query indexPageQuery {
     allFile(filter: { name: { eq: "ca-logo" }, extension: { eq: "png" } }) {
       edges {
         node {
@@ -29,10 +23,10 @@ export const query = graphql`
 
 export const Head = (props) => {
   console.log(props);
-  console.log(process.env.GATSBY_DOMAIN);
+  console.log(process.env.DOMAIN);
   return (
     <SEO
-      title="Code Artist - Software Development"
+      title="Code Artist - Demos"
       description="We turn coffee into code and create websites faster than the speed of light. Need a new website? We've got you covered... or at least, covered in lines of code."
       keywords="Software development, Web development, Mobile app development, Custom software solutions, Full-stack development, Software architecture"
       canonicalUrl={process.env.GATSBY_DOMAIN}
