@@ -6,7 +6,7 @@
   "author": "Mateusz Szostek",
   "dependencies": {
     "@gatsbyjs/reach-router": "^2.0.1",
-    "gatsby": "^4.0.2",
+    "gatsby": "^5.6.0",
     "gatsby-awesome-pagination": "^0.3.8",
     "gatsby-image": "^3.11.0",
     "gatsby-link": "^5.5.0",
