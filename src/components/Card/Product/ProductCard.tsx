@@ -49,9 +49,7 @@ const ProductCard = ({
           </div>
         )}
         {description && (
-          <p className="product-card__description" text-left>
-            {description}
-          </p>
+          <p className="product-card__description text-left">{description}</p>
         )}
         <div className="product-card__actions-container z-55 absolute flex">
           <CTA to="">

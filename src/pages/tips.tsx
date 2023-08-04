@@ -6,7 +6,7 @@ import ListMenuBackgroundTemplate from "../modules/ListMenuBackgroundTemplate";
 import ListContentTemplate from "../modules/ListContentTemplate";
 import { IContentCard } from "../types/components";
 
-const DemosPage = (props) => {
+const TipsPage = (props) => {
   console.log(props);
 
   const contentCards: IContentCard[] =
@@ -20,7 +20,7 @@ const DemosPage = (props) => {
         timestamp: el?.node?.frontmatter?.timestamp,
         action: {
           cta: {
-            to: el?.node?.frontmatter?.urlName,
+            to: `/tip/${el?.node?.frontmatter?.urlName}`,
           },
         },
       };
@@ -34,11 +34,11 @@ const DemosPage = (props) => {
   );
 };
 
-export default DemosPage;
+export default TipsPage;
 
 export const query = graphql`
-  query allDemosQuery {
-    allMarkdownRemark(filter: { frontmatter: { type: { eq: "demo" } } }) {
+  query allTipsQuery {
+    allMarkdownRemark(filter: { frontmatter: { type: { eq: "tip" } } }) {
       edges {
         node {
           frontmatter {
@@ -47,6 +47,11 @@ export const query = graphql`
             urlName
             description
             alternativeText
+            image {
+              childImageSharp {
+                gatsbyImageData(layout: FULL_WIDTH)
+              }
+            }
           }
           id
         }
@@ -56,6 +61,8 @@ export const query = graphql`
 `;
 
 export const Head = (props) => {
+  console.log(props);
+  console.log(process.env.DOMAIN);
   return (
     <SEO
       title="Code Artist - Demos"

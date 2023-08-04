@@ -4,7 +4,7 @@
   height: 100%;
 }
 
-@media only screen and (max-width: var(--bpXxl)) {
+@media only screen and (max-width: 1440px) {
   .section__container {
     width: 100%;
   }

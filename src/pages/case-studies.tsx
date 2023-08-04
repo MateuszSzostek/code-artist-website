@@ -6,7 +6,7 @@ import ListMenuBackgroundTemplate from "../modules/ListMenuBackgroundTemplate";
 import ListContentTemplate from "../modules/ListContentTemplate";
 import { IContentCard } from "../types/components";
 
-const DemosPage = (props) => {
+const CaseStudiesPage = (props) => {
   console.log(props);
 
   const contentCards: IContentCard[] =
@@ -34,11 +34,11 @@ const DemosPage = (props) => {
   );
 };
 
-export default DemosPage;
+export default CaseStudiesPage;
 
 export const query = graphql`
-  query allDemosQuery {
-    allMarkdownRemark(filter: { frontmatter: { type: { eq: "demo" } } }) {
+  query allCaseStudiesQuery {
+    allMarkdownRemark(filter: { frontmatter: { type: { eq: "case-study" } } }) {
       edges {
         node {
           frontmatter {
@@ -58,7 +58,7 @@ export const query = graphql`
 export const Head = (props) => {
   return (
     <SEO
-      title="Code Artist - Demos"
+      title="Code Artist - CaseStudies"
       description="We turn coffee into code and create websites faster than the speed of light. Need a new website? We've got you covered... or at least, covered in lines of code."
       keywords="Software development, Web development, Mobile app development, Custom software solutions, Full-stack development, Software architecture"
       canonicalUrl={process.env.GATSBY_DOMAIN}

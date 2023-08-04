@@ -24,8 +24,9 @@ interface IContentCard {
   id: string | number;
   title?: string;
   description?: string;
-  image?: IGatsbyImage;
+  image?: IGatsbyImage | any;
   ImageComponent?: JSX.Element;
+  timestamp?: number;
   altImg?: string;
   action?: {
     name: string;

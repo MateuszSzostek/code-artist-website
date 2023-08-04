@@ -1,0 +1,6 @@
+.list-content-template__section {
+  position: relative;
+}
+
+@media only screen and (max-width: 1024px) {
+}
