@@ -8,7 +8,7 @@
 
 .content-entertainment__image-container {
   height: 300px;
-  opacity: 0.2;
+  opacity: 0.05;
 }
 
 .content-entertainment__image {
@@ -19,7 +19,12 @@
   min-width: 300px;
 }
 
-.content-entertainment__container > article p {
+.content-entertainment__container > article p, .content-entertainment__container li {
   line-height: 24px;
   font-weight: 300;
+}
+
+.gatsby-highlight, .gatsby-highlight pre, .gatsby-highlight code {
+  max-width: calc(100vw - 32px);
+  overflow: auto;
 }
