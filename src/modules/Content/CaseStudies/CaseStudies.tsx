@@ -12,6 +12,7 @@ const CaseStudies = () => {
   const { caseStudyImages } = useCaseStudyImages();
 
   console.log(caseStudyImages);
+  console.log(contentCards);
 
   return (
     <SectionColored background="#000000">
@@ -26,7 +27,7 @@ const CaseStudies = () => {
               key={card.id}
               {...card}
               image={
-                caseStudyImages?.allFile?.edges[(card.id as number) - 1].node
+                caseStudyImages?.allFile?.edges[(card?.id as number) - 1]?.node
                   ?.childImageSharp?.gatsbyImageData
               }
             />
