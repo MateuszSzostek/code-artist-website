@@ -215,6 +215,7 @@ const contentCards: IContentCard[] = [
   {
     id: 1,
     title: "Test Card Title",
+    image: "streamline-transport-website",
     description:
       "Nulla dignissim nibh nec nisi tincidunt pulvinar. Nunc quis porttitor est. Pellentesque.",
     action: {
@@ -228,6 +229,7 @@ const contentCards: IContentCard[] = [
   {
     id: 2,
     title: "Test Card Title",
+    image: "streamline-transport-website",
     description:
       "Nulla dignissim nibh nec nisi tincidunt pulvinar. Nunc quis porttitor est. Pellentesque.",
     action: {
@@ -288,7 +290,8 @@ const contentCards: IContentCard[] = [
   },
   {
     id: 7,
-    title: "Test Card Title",
+    title: "4 Beauty Make Up",
+    image: "4beauty-make-up-website",
     description:
       "Nulla dignissim nibh nec nisi tincidunt pulvinar. Nunc quis porttitor est. Pellentesque.",
     action: {
@@ -297,10 +300,12 @@ const contentCards: IContentCard[] = [
         to: "/",
       },
     },
+    tags: ["Make Up", "Beauty"],
   },
   {
     id: 8,
-    title: "Test Card Title",
+    title: "Streamline Transport",
+    image: "streamline-transport-website",
     description:
       "Nulla dignissim nibh nec nisi tincidunt pulvinar. Nunc quis porttitor est. Pellentesque.",
     action: {
@@ -309,6 +314,7 @@ const contentCards: IContentCard[] = [
         to: "/",
       },
     },
+    tags: ["Logistics", "Transport"],
   },
 ];
 
